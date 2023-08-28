@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { Inventory } from './inventory.interface';
 import { InventoryService } from './inventory.service';
 
@@ -11,5 +11,9 @@ export class InventoryController {
         return this.inventoryService.getAllInventory()
     }
 
+    @Get()
+    getInvtryById(@Param('id') id: number): Promise<Inventory> {
+        return this.inventoryService.getInvtryById(id)
+    }
 
 }
