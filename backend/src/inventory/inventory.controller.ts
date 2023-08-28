@@ -1,4 +1,4 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, Param, Post, Body } from '@nestjs/common';
 import { Inventory } from './inventory.interface';
 import { InventoryService } from './inventory.service';
 
@@ -14,6 +14,11 @@ export class InventoryController {
     @Get()
     getInvtryById(@Param('id') id: number): Promise<Inventory> {
         return this.inventoryService.getInvtryById(id)
+    }
+
+    @Post()
+    addInvtry(@Body() invtry: Inventory): Promise<Inventory> {
+        return this.inventoryService.addInvtry(invtry)
     }
 
 }

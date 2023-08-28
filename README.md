@@ -1,5 +1,3 @@
-### Indice
-
 # TP Integrador : Backend
 
 Proyecto integrador realizado bajo el framework NestJS, que nos sirve para incorporar todos los conceptos utilizados hasta el momento, como el uso de servidores, HTTP, response, API, etc. La idea principal es poder utilizar metodos *CRUD*. 
@@ -14,7 +12,7 @@ Armar modelo de datos - Simular una peticion y su consiguiente respuesta del bac
 3. **GET_Mock json-server**
 Montar base de datos de prueba - Conectarla con la API - Tener un servicio con una peticion y su respuesta (datos obtenidos de una DB)
 
-[Trello de actividades Ágiles I sprint:](https://trello.com/b/Xb5CvUle/inventario)
+[Trello de actividades Ágiles:](https://trello.com/b/Xb5CvUle/inventario)
 
 ### Instrucciones para correr el codigo
 
@@ -38,4 +36,18 @@ Obtener la respuesta de la peticion creada en el punto 3 utilizando POSTMAN
 2. **Altas API**
 Crear los endpoints necesarios de ALTA para nuestra API utilizando metodos POST
 
-[Trello de actividades Ágiles II sprint:](https://trello.com/b/Xb5CvUle/inventario)
+### Instrucciones para correr el codigo
+Abrir POSTMAN y pegar la siguiente request:
+
+> http://localhost:3011/inventory
+
+En el apartado GET, traerá todos los registros de la ruta. Y para buscar un elemento en particular, mediante su id, escribir:
+
+> http://localhost:3011/inventory/id:number
+
+En caso de existir, traerá el registro correspondiente, de lo contrario mostrará un array vacío (not found 404)
+
+**Para crear un nuevo registro** 
+Utilizaremos el metodo **POST** en el Postman dentro de la lista, y en la sección Body añadir datos que se quieran cargar al MockAPI generado previamente. Este creara un nuevo registro con su id especifico previamente generado por codigo. 
+
+[Trello de actividades Ágiles:](https://trello.com/b/Xb5CvUle/inventario)

@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { Inventory } from './inventory.interface';
 
-const URL_invtry = 'http://localhost:3001/inventory'
+const URL_invtry = 'http://localhost:3011/inventory'
 
 @Injectable()
 export class InventoryService {
@@ -22,7 +22,8 @@ export class InventoryService {
 
     private async setId(): Promise<number> {
         const invtry = await this.getInvtry();
-        const id = invtry.pop().id - 1; //remember zero index array
+        const lastInvtry = invtry[invtry.length - 1]; 
+        const id = lastInvtry.id + 1; //remember zero index array
         return id;
     }
 
@@ -47,5 +48,24 @@ export class InventoryService {
         } catch (err) {
             throw new Error(err)
         }
+    }
+
+    async addInvtry(invtry: Inventory): Promise<Inventory> {
+        try {
+            const id:number = await this.setId();
+            const newInvtry = { ...invtry, id }
+            const res = await fetch(URL_invtry, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(newInvtry)
+            });
+            const parsed = await res.json();
+            return parsed;
+        } catch (err) {
+            throw new Error(err)
+        }
+
     }
 }
