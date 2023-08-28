@@ -1,0 +1,94 @@
+{
+    "inventory": [
+        {
+            "id": "1",
+            "title": "Manzanas Orgánicas Frescas",
+            "price": 2.99,
+            "description": "Manzanas orgánicas crujientes y deliciosas, ideales para picar.",
+            "category": "Frutas",
+            "stock": 150,
+            "image": "manzana.jpg"
+        },
+        {
+            "id": "2",
+            "title": "Caja de Aguacates Premium",
+            "price": 4.75,
+            "description": "Una caja de aguacates de calidad premium, provenientes de nuestros propios huertos.",
+            "category": "Frutas",
+            "stock": 50,
+            "image": "aguacate.jpg"
+        },
+        {
+            "id": "3",
+            "title": "Tomates Frescos del Huerto",
+            "price": 1.25,
+            "description": "Tomates madurados en la vid, recolectados diariamente de nuestros huertos orgánicos.",
+            "category": "Hortalizas",
+            "stock": 100,
+            "image": "tomate.jpg"
+        },
+        {
+            "id": "4",
+            "title": "Harina de Trigo Dorado",
+            "price": 3.49,
+            "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+            "category": "Cereales",
+            "stock": 200,
+            "image": "harina.jpg"
+        },
+        {
+            "id": "5",
+            "title": "Huevos de Granja Frescos",
+            "price": 2.25,
+            "description": "Huevos de granja de gallinas camperas, criadas en libertad.",
+            "category": "Productos Lácteos",
+            "stock": 75,
+            "image": "huevos.jpg"
+        },
+        {
+            "id": "6",
+            "title": "Manojo de Espinacas Orgánicas",
+            "price": 1.99,
+            "description": "Espinacas orgánicas ricas en nutrientes, seleccionadas y lavadas a mano.",
+            "category": "Verduras de Hoja",
+            "stock": 30,
+            "image": "espinacas.jpg"
+        },
+        {
+            "id": "7",
+            "title": "Manojo de Zanahorias Frescas",
+            "price": 0.99,
+            "description": "Zanahorias frescas y jugosas, un básico para cada cocina.",
+            "category": "Hortalizas",
+            "stock": 120,
+            "image": "zanahoria.jpg"
+        },
+        {
+            "id": "8",
+            "title": "Tarro de Miel Pura",
+            "price": 6.50,
+            "description": "Miel 100% pura y cruda, recolectada de nuestras colmenas.",
+            "category": "Miel",
+            "stock": 40,
+            "image": "miel.jpg"
+        },
+        {
+            "id": "9",
+            "title": "Mezcla de Papas Criollas",
+            "price": 2.75,
+            "description": "Una mezcla de papas criollas de colores variados, ideales para asar.",
+            "category": "Hortalizas",
+            "stock": 60,
+            "image": "papas.jpg"
+        },
+        {
+            "id": "10",
+            "title": "Jugo de Naranja Recién Exprimido",
+            "price": 3.25,
+            "description": "Jugo de naranja naturalmente dulce, exprimido al momento de naranjas maduras.",
+            "category": "Bebidas",
+            "stock": 25,
+            "image": "jugo-de-naranja.jpg"
+        }
+    ]
+}
