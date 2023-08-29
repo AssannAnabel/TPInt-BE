@@ -110,6 +110,15 @@
       "price": 6,
       "description": "media",
       "id": 13
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 14
     }
   ]
 }

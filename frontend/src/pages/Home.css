@@ -1,0 +1,20 @@
+.layout {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 50px;
+  justify-content: center;
+}
+
+.link-login {
+  cursor: pointer;
+}
+
+.loading-format {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

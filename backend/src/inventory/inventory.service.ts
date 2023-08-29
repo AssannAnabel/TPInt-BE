@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { Inventory } from './inventory.interface';
 
-const URL_invtry = 'http://localhost:3011/inventory'
+const URL_invtry = 'http://localhost:3030/inventory'
 
 @Injectable()
 export class InventoryService {
