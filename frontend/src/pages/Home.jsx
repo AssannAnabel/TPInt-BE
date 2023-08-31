@@ -11,7 +11,7 @@ function Home() {
   console.log(invtry);
 
 
-  if (isLoading) return <div className='loading-format'><h1>loading...</h1></div>;
+  if (isLoading) return <div className='loader'></div>;
   if (error) return <div><h1>{error}</h1></div>;
   return (
     <>

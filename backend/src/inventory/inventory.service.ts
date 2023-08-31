@@ -1,7 +1,7 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, HttpCode, NotFoundException } from '@nestjs/common';
 import { Inventory } from './inventory.interface';
 
-const URL_invtry = 'http://localhost:3030/inventory'
+const URL_invtry = 'http://localhost:3030/inventory/'
 
 @Injectable()
 export class InventoryService {
@@ -13,6 +13,7 @@ export class InventoryService {
                     'Content-Type': 'application/json'
                 }
             });
+            if (!res.ok) throw new Error('Response not ok');
             const parsed = await res.json();
             return parsed;
         } catch (err) {
@@ -22,7 +23,7 @@ export class InventoryService {
 
     private async setId(): Promise<number> {
         const invtry = await this.getInvtry();
-        const lastInvtry = invtry[invtry.length - 1]; 
+        const lastInvtry = invtry[invtry.length - 1];
         const id = lastInvtry.id + 1; //remember zero index array
         return id;
     }
@@ -39,20 +40,19 @@ export class InventoryService {
         try {
             const res = await fetch(URL_invtry + id, {
                 method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
+                //headers:{'Content-Type':'application/json'}
             });
+            if (!res.ok) throw new Error('Response not ok');
             const parsed = await res.json()
-            return parsed;
+            if (Object.keys(parsed)) return parsed
         } catch (err) {
-            throw new Error(err)
+            throw new NotFoundException(`El registro de inventario con id ${id} no existe`)
         }
     }
 
     async addInvtry(invtry: Inventory): Promise<Inventory> {
         try {
-            const id:number = await this.setId();
+            const id: number = await this.setId();
             const newInvtry = { ...invtry, id }
             const res = await fetch(URL_invtry, {
                 method: 'POST',
@@ -61,11 +61,49 @@ export class InventoryService {
                 },
                 body: JSON.stringify(newInvtry)
             });
+            if (!res.ok) throw new Error('Response not ok');
             const parsed = await res.json();
             return parsed;
         } catch (err) {
             throw new Error(err)
         }
 
+    }
+
+    async deleteInvtryById(id: number): Promise<Inventory> {
+        try {
+            const res = await fetch(URL_invtry + id, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            if (!res.ok) throw new Error('Response not ok');
+            const parsed = await res.json();
+            return parsed
+        } catch (err) {
+            throw new Error(err)
+
+        }
+    }
+
+    async updateInvtryById(id: number, body: Inventory): Promise<Inventory> {
+        try {
+            const isInvtry = await this.getInvtryById(id);
+            if (!Object.keys(isInvtry).length) return; // si no encuentra el id, corta aca
+            const updateInvtry = { ...body, id }
+            const res = await fetch(URL_invtry + id, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(updateInvtry)
+            })
+            if (!res.ok) throw new Error('Response not ok');
+            const parsed = await res.json();
+            return parsed;
+        } catch (err) {
+            throw new Error(err)
+        }
     }
 }

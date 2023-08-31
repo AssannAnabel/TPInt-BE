@@ -82,13 +82,13 @@
       "image": "papas.jpg"
     },
     {
-      "id": 10,
-      "title": "Jugo de Naranja Recién Exprimido",
-      "price": 3.25,
-      "description": "Jugo de naranja naturalmente dulce, exprimido al momento de naranjas maduras.",
-      "category": "Bebidas",
-      "stock": 25,
-      "image": "jugo-de-naranja.jpg"
+      "title": "bienvenidos",
+      "price": 10000.49,
+      "description": "Harina",
+      "category": "Cereales",
+      "stock": 20000,
+      "image": "harina.jpg",
+      "id": 10
     },
     {
       "title": "frutillas",
@@ -119,6 +119,123 @@
       "stock": 200,
       "image": "harina.jpg",
       "id": 14
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 17
+    },
+    {
+      "title": "bienvenidos",
+      "price": 10000.49,
+      "description": "Harina",
+      "category": "Cereales",
+      "stock": 20000,
+      "image": "harina.jpg",
+      "id": 18
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 19
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 21
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 22
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 23
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 24
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 25
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 26
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 27
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 28
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 29
+    },
+    {
+      "title": "Harina de Trigo Dorado",
+      "price": 3.49,
+      "description": "Harina de trigo dorado finamente molida, ideal para hornear.",
+      "category": "Cereales",
+      "stock": 200,
+      "image": "harina.jpg",
+      "id": 30
     }
   ]
 }
