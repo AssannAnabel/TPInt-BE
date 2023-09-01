@@ -1,9 +1,10 @@
 export interface Inventory {
     id: number,
-    title: string,
-    price: number,
+    code: string,
+    product: string,
     description: string,
-    category: string,
-    stock: number,
-    image: string
+    price: number,
+    item: string,
+    amount: number,
+    imagenes: []
 }

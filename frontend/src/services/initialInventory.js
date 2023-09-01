@@ -1,9 +1,10 @@
 export const initialInventory = {
     id: "",
-    title: "",
-    price: "",
+    code: "",
+    product: "",
     description: "",
-    category: "",
-    stock: "",
-    image: ""
+    price: "",
+    item: "",
+    amount: "",
+    imagenes: []
 }

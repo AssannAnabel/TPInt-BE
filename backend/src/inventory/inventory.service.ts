@@ -40,11 +40,11 @@ export class InventoryService {
         try {
             const res = await fetch(URL_invtry + id, {
                 method: 'GET',
-                //headers:{'Content-Type':'application/json'}
+                headers:{'Content-Type':'application/json'}
             });
             if (!res.ok) throw new Error('Response not ok');
             const parsed = await res.json()
-            if (Object.keys(parsed)) return parsed
+            if (Object.keys(parsed)) return parsed;
         } catch (err) {
             throw new NotFoundException(`El registro de inventario con id ${id} no existe`)
         }
@@ -54,6 +54,8 @@ export class InventoryService {
         try {
             const id: number = await this.setId();
             const newInvtry = { ...invtry, id }
+            console.log(newInvtry);
+            
             const res = await fetch(URL_invtry, {
                 method: 'POST',
                 headers: {
@@ -63,7 +65,7 @@ export class InventoryService {
             });
             if (!res.ok) throw new Error('Response not ok');
             const parsed = await res.json();
-            return parsed;
+            if(Object.keys(parsed).length) return parsed
         } catch (err) {
             throw new Error(err)
         }
