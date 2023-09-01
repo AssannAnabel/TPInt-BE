@@ -1,4 +1,4 @@
-import { Injectable, HttpCode, NotFoundException } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { Inventory } from './inventory.interface';
 
 const URL_invtry = 'http://localhost:3030/inventory/'
@@ -44,9 +44,9 @@ export class InventoryService {
             });
             if (!res.ok) throw new Error('Response not ok');
             const parsed = await res.json()
-            if (Object.keys(parsed)) return parsed;
+            return parsed;
         } catch (err) {
-            throw new NotFoundException(`El registro de inventario con id ${id} no existe`)
+            throw new Error(err)
         }
     }
 
@@ -67,7 +67,7 @@ export class InventoryService {
             const parsed = await res.json();
             if(Object.keys(parsed).length) return parsed
         } catch (err) {
-            throw new Error(err)
+            throw new Error(`Te faltó cargar algo mas, maniito....`)
         }
 
     }
