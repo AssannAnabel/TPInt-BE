@@ -404,16 +404,6 @@
       "imagenes": []
     },
     {
-      "id": 41,
-      "code": "V 500348",
-      "product": "Botin Pampero Flore c/punta marron n°40",
-      "description": "Botín de trabajo de flor con punta marrón, tamaño 40",
-      "price": 31025.98,
-      "item": "ropa trabajo",
-      "amount": 5,
-      "imagenes": []
-    },
-    {
       "code": "V 500348",
       "product": "Botin Pampero Flore c/punta marron n°40",
       "description": "Botín de trabajo de flor con punta marrón, tamaño 40",
@@ -421,17 +411,7 @@
       "item": "ropa trabajo",
       "amount": 3,
       "imagenes": [],
-      "id": 42
-    },
-    {
-      "code": "V 500348",
-      "product": "Botin Pampero Flore c/punta marron n°40",
-      "description": "Botín de trabajo de flor con punta marrón, tamaño 40",
-      "price": 31025.98,
-      "item": "ropa trabajo",
-      "amount": 3,
-      "imagenes": [],
-      "id": 43
+      "id": 41
     }
   ]
 }

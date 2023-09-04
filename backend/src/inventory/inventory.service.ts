@@ -9,11 +9,8 @@ export class InventoryService {
         try {
             const res = await fetch(URL_invtry, {
                 method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
+                headers: { 'Content-Type': 'application/json' }
             });
-            if (!res.ok) throw new Error('Response not ok');
             const parsed = await res.json();
             return parsed;
         } catch (err) {
@@ -40,9 +37,8 @@ export class InventoryService {
         try {
             const res = await fetch(URL_invtry + id, {
                 method: 'GET',
-                headers:{'Content-Type':'application/json'}
+                headers: { 'Content-Type': 'application/json' }
             });
-            if (!res.ok) throw new Error('Response not ok');
             const parsed = await res.json()
             return parsed;
         } catch (err) {
@@ -54,20 +50,16 @@ export class InventoryService {
         try {
             const id: number = await this.setId();
             const newInvtry = { ...invtry, id }
-            console.log(newInvtry);
-            
             const res = await fetch(URL_invtry, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(newInvtry)
             });
-            if (!res.ok) throw new Error('Response not ok');
             const parsed = await res.json();
-            if(Object.keys(parsed).length) return parsed
+            console.log(parsed);            
+            return parsed;
         } catch (err) {
-            throw new Error(`Te faltó cargar algo mas, maniito....`)
+            throw new Error(err)
         }
 
     }
@@ -75,17 +67,15 @@ export class InventoryService {
     async deleteInvtryById(id: number): Promise<Inventory> {
         try {
             const res = await fetch(URL_invtry + id, {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
+                method: 'DELETE',
+                headers: { 'Content-Type': 'application/json' }
             })
-            if (!res.ok) throw new Error('Response not ok');
             const parsed = await res.json();
-            return parsed
+            console.log(`hola ${parsed}`);
+            
+            return parsed;
         } catch (err) {
-            throw new Error(err)
-
+            throw new Error(err);
         }
     }
 
@@ -96,12 +86,9 @@ export class InventoryService {
             const updateInvtry = { ...body, id }
             const res = await fetch(URL_invtry + id, {
                 method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(updateInvtry)
             })
-            if (!res.ok) throw new Error('Response not ok');
             const parsed = await res.json();
             return parsed;
         } catch (err) {
