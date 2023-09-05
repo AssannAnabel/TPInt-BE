@@ -9,11 +9,12 @@
     font-family: 'Roboto', sans-serif;
     max-width: 95%;
     margin: auto;
-    --clr1: #f4bfbf;
-    --clr2: #d7e2ca;
-    --clr3: #a1d9d9;
-    --clr4: #d9d9a1;
-    --grad: linear-gradient(to top right, var(--clr1), var(--clr2), var(--clr3), var(--clr4), var(--clr3), var(--clr2), var(--clr1));
+    --clr1: #2a8c4a;
+    --clr2: #2a8c4a;
+    --clr3: #9bfab0;
+    --clr4: #d0fdd7;
+    --clr5: #ffffff;
+    --grad: linear-gradient(to top right, var(--clr1), var(--clr2), var(--clr3), var(--clr4), var(--clr5), var(--clr4), var(--clr3), var(--clr2), var(--clr1));
     overflow-y: scroll;
     background-color: var(--clr2);
 }

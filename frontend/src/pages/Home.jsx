@@ -4,7 +4,7 @@ import Cards from '../components/Cards';
 import './Home.css'
 import Carousel from '../components/Carousel';
 
-import Header from '../components/header';
+import Header from '../components/Header';
 
 function Home() {
   const { invtry, error, isLoading } = useContext(InvtryCtx);

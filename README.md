@@ -1,7 +1,11 @@
 # TP Integrador : Backend
 
 Proyecto integrador realizado bajo el framework NestJS, que nos sirve para incorporar todos los conceptos utilizados hasta el momento, como el uso de servidores, HTTP, response, API, etc. La idea principal es poder utilizar metodos *CRUD*. 
-
+Integrantes (link al perfil de Linkedin:
+[Anabel Assan](https://www.linkedin.com/in/anabel-assann/)
+[Fabricio Córdoba](https://www.linkedin.com/in/fabricio-cordoba/)
+[Santiago Garda](https://www.linkedin.com/in/santiago-garda-1835891b9/)
+[Emiliano Salazar](https://www.linkedin.com/in/emiliano-salazar/)
 
 ## I Sprint -15/8 al 21/8-
 
@@ -12,7 +16,7 @@ Armar modelo de datos - Simular una peticion y su consiguiente respuesta del bac
 3. **GET_Mock json-server**
 Montar base de datos de prueba - Conectarla con la API - Tener un servicio con una peticion y su respuesta (datos obtenidos de una DB)
 
-[Trello de actividades Ágiles:](https://trello.com/b/Xb5CvUle/inventario)
+[Trello de actividades Ágiles -I Sprint-:](https://trello.com/b/Xb5CvUle/inventario)
 
 ### Instrucciones para correr el codigo
 
@@ -31,9 +35,9 @@ Este comando queda en modo vigilia, así se logra ver cada cambio que se hace al
 
 ## II Sprint -22/8 al 28/8-
 
-1. **MVC Postman - getById** 
+4. **MVC Postman - getById** 
 Obtener la respuesta de la peticion creada en el punto 3 utilizando POSTMAN
-2. **Altas API**
+5. **Altas API**
 Crear los endpoints necesarios de ALTA para nuestra API utilizando metodos POST
 
 ### Instrucciones para correr el codigo
@@ -50,4 +54,15 @@ En caso de existir, traerá el registro correspondiente, de lo contrario mostrar
 **Para crear un nuevo registro** 
 Utilizaremos el metodo **POST** en el Postman dentro de la lista, y en la sección Body añadir datos que se quieran cargar al MockAPI generado previamente. Este creara un nuevo registro con su id especifico previamente generado por codigo. 
 
-[Trello de actividades Ágiles:](https://trello.com/b/Xb5CvUle/inventario)
+[Trello de actividades Ágiles -II Sprint-:](https://trello.com/b/Xb5CvUle/inventario)
+
+## III Sprint -29/8 al 4/9-
+
+6. **Bajas y Modificaciones** 
+Crear los endpoints necesarios de BAJA y MODIFICACIONES para nuestra API utilizando metodos PUT y DELETE
+7. **Response Codes**
+A todos los endpoints previamente creados agregarle los codigos de respuesta utilizando el decorador @Res
+
+En este sprint ya tenemos todos los metodos **CRUD** implementados, y cada uno con una respuesta que nos devuelve la solicitud **HTTP** (generada por nosotros, a traves de **@Res()**)
+
+[Trello de actividades Ágiles -III Sprint:](https://trello.com/b/Xb5CvUle/inventario)

@@ -6,5 +6,5 @@ export const initialInventory = {
     price: "",
     item: "",
     amount: "",
-    imagenes: []
+    imagenes: ""
 }

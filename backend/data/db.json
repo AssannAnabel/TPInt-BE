@@ -8,7 +8,7 @@
       "price": 502.12,
       "item": "Ferretería",
       "amount": 20,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "price": 2035.15,
       "item": "Ferretería",
       "amount": 30,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "price": 1003.32,
       "item": "Ferretería",
       "amount": 15,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "price": 435.2,
       "item": "Ferretería",
       "amount": 50,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "price": 20001.25,
       "item": "Ferretería",
       "amount": 10,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "price": 4025.21,
       "item": "Ferretería",
       "amount": 25,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 7,
@@ -68,7 +68,7 @@
       "price": 999.99,
       "item": "Ferretería",
       "amount": 8,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 8,
@@ -78,7 +78,7 @@
       "price": 1122.12,
       "item": "Ferretería",
       "amount": 18,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 9,
@@ -88,7 +88,7 @@
       "price": 605.65,
       "item": "Ferretería",
       "amount": 40,
-      "imagen": []
+      "imagen": ""
     },
     {
       "id": 10,
@@ -98,7 +98,7 @@
       "price": 301.55,
       "item": "Ferretería",
       "amount": 100,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 11,
@@ -108,7 +108,7 @@
       "price": 604.4,
       "item": "Ferretería",
       "amount": 28,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 12,
@@ -118,7 +118,7 @@
       "price": 1403.2,
       "item": "Ferretería",
       "amount": 60,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 13,
@@ -128,7 +128,7 @@
       "price": 3025.25,
       "item": "Ferretería",
       "amount": 25,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 14,
@@ -138,7 +138,7 @@
       "price": 1254.23,
       "item": "Ferretería",
       "amount": 35,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 15,
@@ -148,7 +148,7 @@
       "price": 6352.23,
       "item": "Ferretería",
       "amount": 12,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 16,
@@ -158,7 +158,7 @@
       "price": 10563.23,
       "item": "Ferretería",
       "amount": 6,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 17,
@@ -168,7 +168,7 @@
       "price": 702.65,
       "item": "Ferretería",
       "amount": 20,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 18,
@@ -178,7 +178,7 @@
       "price": 865.65,
       "item": "Ferretería",
       "amount": 200,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 19,
@@ -188,7 +188,7 @@
       "price": 11654.45,
       "item": "Ferretería",
       "amount": 8,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 20,
@@ -198,7 +198,7 @@
       "price": 6205.85,
       "item": "Ferretería",
       "amount": 14,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 21,
@@ -208,7 +208,7 @@
       "price": 12900,
       "item": "Ferretería",
       "amount": 5,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 22,
@@ -218,7 +218,7 @@
       "price": 732.25,
       "item": "Ferretería",
       "amount": 30,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 23,
@@ -228,7 +228,7 @@
       "price": 498.99,
       "item": "Ferretería",
       "amount": 40,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 24,
@@ -238,7 +238,7 @@
       "price": 26658.99,
       "item": "Ferretería",
       "amount": 10,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 25,
@@ -248,7 +248,7 @@
       "price": 5445.5,
       "item": "Ferretería",
       "amount": 5,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 26,
@@ -258,7 +258,7 @@
       "price": 1805.99,
       "item": "Ferretería",
       "amount": 80,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 27,
@@ -268,7 +268,7 @@
       "price": 15999.25,
       "item": "Ferretería",
       "amount": 18,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 28,
@@ -278,7 +278,7 @@
       "price": 17999.99,
       "item": "Ferretería",
       "amount": 3,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 29,
@@ -288,7 +288,7 @@
       "price": 956.75,
       "item": "Ferretería",
       "amount": 20,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 30,
@@ -298,7 +298,7 @@
       "price": 836.99,
       "item": "Ferretería",
       "amount": 40,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 31,
@@ -308,10 +308,7 @@
       "price": 350000,
       "item": "Tranquera",
       "amount": 10,
-      "imagenes": [
-        "frontend/imagenes/tranqueraMadera1.jpg",
-        "tranqueraMadera1.jpg"
-      ]
+      "imagenes": ""
     },
     {
       "id": 32,
@@ -321,7 +318,7 @@
       "price": 480000.5,
       "item": "Tranquera",
       "amount": 5,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 33,
@@ -331,7 +328,7 @@
       "price": 220000.75,
       "item": "Tranquera",
       "amount": 8,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 34,
@@ -341,7 +338,7 @@
       "price": 670968.25,
       "item": "Tranquera",
       "amount": 3,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 35,
@@ -361,7 +358,7 @@
       "price": 12856.32,
       "item": "ropa trabajo",
       "amount": 25,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 37,
@@ -371,7 +368,7 @@
       "price": 14897.8,
       "item": "ropa trabajo",
       "amount": 22,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 38,
@@ -381,7 +378,7 @@
       "price": 6756.1,
       "item": "ropa trabajo",
       "amount": 50,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 39,
@@ -391,7 +388,7 @@
       "price": 23965.1,
       "item": "ropa trabajo",
       "amount": 9,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "id": 40,
@@ -401,7 +398,7 @@
       "price": 31025.98,
       "item": "ropa trabajo",
       "amount": 5,
-      "imagenes": []
+      "imagenes": ""
     },
     {
       "code": "V 500348",
@@ -410,7 +407,7 @@
       "price": 31025.98,
       "item": "ropa trabajo",
       "amount": 3,
-      "imagenes": [],
+      "imagenes": "",
       "id": 41
     }
   ]
