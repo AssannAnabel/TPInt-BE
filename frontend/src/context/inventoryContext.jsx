@@ -1,12 +1,11 @@
 import { createContext, useState, useEffect, useCallback } from "react";
-import { getAllInvtry, URL_invtry, addInvtry } from '../services/inventoryServices'
+import { getAllInvtry, URL_invtry } from '../services/inventoryServices'
 import { initialInventory } from '../services/initialInventory'
 
 export const InvtryCtx = createContext([initialInventory]);
 
 export const InvtryCtxProvider = ({ children }) => {
   const [invtry, setInvtry] = useState([]);
-  const [newInvtry, setNewInvtry] = useState([]);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -16,8 +15,6 @@ export const InvtryCtxProvider = ({ children }) => {
       setError(null);
       setIsLoading(true);
       const data = await getAllInvtry(URL_invtry);
-      const newData = await addInvtry(in)
-      setNewInvtry()
       setInvtry(data);
     } catch (err) {
       console.error(err);

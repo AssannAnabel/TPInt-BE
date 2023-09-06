@@ -1,0 +1,79 @@
+/* styles.css */
+
+/* Contenedor del formulario */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Grupo de elementos del formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/* Estilo para etiquetas de formulario con la clase "form-label" */
+.form-label {
+    margin-bottom: 15px;
+}
+
+/* Estilo para entradas de texto con la clase "form-input" */
+/* styles.css */
+
+/* Estilo para todos los inputs en el formulario */
+.form-input {
+    width: 100%; /* Ancho del 100% del contenedor */
+    padding: 5px; /* Espaciado interno en los inputs */
+    border: 1px solid #ccc; /* Borde ligero */
+    margin-bottom: 10px; /* Espacio entre los inputs */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+
+/* Estilo para el menú desplegable (select) */
+.form-select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para el grupo de botones */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Espacio superior entre los botones y el contenido superior */
+    
+}
+
+/* Estilo para los botones */
+.form-button {
+    background-color: var(--clr4); /* Color de fondo principal */
+    font-weight: bold;
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer;
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    margin: 10px;
+}
+
+/* Estilo para el botón cuando se pasa el mouse por encima */
+.form-button:hover {
+    background-color: var(--clr3); /* Cambio de color de fondo al pasar el mouse */
+}
+
