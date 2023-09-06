@@ -28,7 +28,7 @@ export class InventoryService {
     async getAllInventory(): Promise<Inventory[]> {
         try {
             return await this.getInvtry()
-        } catch (err) {
+        } catch (err){
             throw new Error(err);
         }
     }

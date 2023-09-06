@@ -4,8 +4,6 @@ import { initialInventory } from '../services/initialInventory'
 
 export const InvtryCtx = createContext([initialInventory]);
 
-console.log(getAllInvtry(URL_invtry));
-
 export const InvtryCtxProvider = ({ children }) => {
   const [invtry, setInvtry] = useState([]);
   const [error, setError] = useState(null);
@@ -17,7 +15,6 @@ export const InvtryCtxProvider = ({ children }) => {
       setError(null);
       setIsLoading(true);
       const data = await getAllInvtry(URL_invtry);
-      console.log('parsed', data);
       setInvtry(data);
     } catch (err) {
       console.error(err);

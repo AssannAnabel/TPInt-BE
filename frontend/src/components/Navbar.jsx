@@ -1,15 +1,18 @@
 import { React } from "react";
+import { Link } from "react-router-dom";
 import './Navbar.css';
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
-    const navigate = useNavigate()
+    //const navigate = useNavigate()
     return (
         <nav>
-            <button>Nosotros</button>
-            <button>Contacto</button>
-            <button>Productos</button>
-            <button onClick={() => navigate('Login')}>Acceso Usuarios</button>
+            <ul>
+                <li><Link>Nosotros</Link></li>
+                <li><Link to={'/LoadInvtry'}>Agregar ítem</Link></li>
+                <li><Link>Productos</Link></li>
+                <li><Link to={"/Login"}>Acceso Usuarios</Link></li>
+            </ul>
         </nav>
     )
 }
