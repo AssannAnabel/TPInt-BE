@@ -3,7 +3,6 @@ import { InvtryCtx } from '../context/inventoryContext';
 import Cards from '../components/Cards';
 import './Home.css'
 import Carousel from '../components/Carousel';
-
 import Header from '../components/header';
 
 function Home() {
@@ -25,5 +24,6 @@ function Home() {
     </>
   )
 }
+
 
 export default Home;
