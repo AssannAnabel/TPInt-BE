@@ -1,0 +1,21 @@
+.ul-format{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.nav-format{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.ul-format a{
+    text-decoration: none;
+    color: var(--clr5);
+    font-size: x-large;
+}
+
+a:hover{
+    text-decoration: underline;
+}

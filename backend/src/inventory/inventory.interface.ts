@@ -6,5 +6,5 @@ export interface Inventory {
     price: number,
     item: string,
     amount: number,
-    imagenes: []
+    imagenes: string
 }

@@ -1,4 +1,10 @@
 .header-format{
-    display: block;
+    display: flex;
     position: sticky;
+    align-items: center;
+    flex-direction: column;
+}
+
+.format-logo{
+    width: 250px;
 }
