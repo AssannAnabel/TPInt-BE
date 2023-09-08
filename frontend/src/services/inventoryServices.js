@@ -1,4 +1,4 @@
-export const URL_invtry = ' http://localhost:3030/inventory';
+export const URL_invtry = 'http://localhost:3000/inventory';
 
 const controller = new AbortController();
 

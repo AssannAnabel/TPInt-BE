@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function InvtryForm() {
 
-    const [newInvtry, setNewInvtry] = useState([])
+    const [newInvtryForm, setNewInvtryForm] = useState([])
 
     const setId = async () => {
         const invtry = await getAllInvtry(URL_invtry);
@@ -26,7 +26,7 @@ function InvtryForm() {
             });
             if (!res.ok) throw new Error(`Response not OK`)
             const parsed = await res.json()
-            setNewInvtry(parsed);
+            setNewInvtryForm(parsed);
         } catch (err) {
             throw new Error(err);
         }
@@ -34,12 +34,12 @@ function InvtryForm() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        addInvtry(newInvtry)
-        console.log(newInvtry);
+        addInvtry(newInvtryForm)
+        console.log(newInvtryForm);
     }
 
     function handleChange(e) {
-        setNewInvtry((prev) => ({
+        setNewInvtryForm((prev) => ({
             ...prev,
             [e.target.name]: e.target.value
         }));

@@ -24,6 +24,12 @@ function Home() {
         <Cards title={"Ropa Trabajo"} image={"https://dsiproteccion.com/wp-content/uploads/2020/05/campo-450x450.png"}/>
         <Cards title={"Tranqueras"} image={"https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webp"}/>
       </section>
+      <section>
+      
+              
+            
+  
+      </section>
       <Footer/>
     </>
   )
