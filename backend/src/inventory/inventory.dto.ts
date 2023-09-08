@@ -1,13 +1,24 @@
-import { IsInt, IsString } from "class-validator";
+import { IsInt, IsString, IsNumber } from "class-validator";
 
 export class InventoryDto {
+    @IsString()
     code: string;
+    
+    @IsString()
     product: string;
+    
+    @IsString()
     description: string;
-    @IsInt()
+    
+    @IsNumber()
     price: number;
+    
+    @IsString()
     item: string;
     
+    @IsInt()
     qty: number;
-    images: string
+    
+    @IsString()
+    images: string;
 }

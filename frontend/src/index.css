@@ -7,10 +7,9 @@
 
 :root {
     font-family: 'Roboto', sans-serif;
-    max-width: 95%;
     margin: auto;
     --clr1: #2a8c4a;
-    --clr2: #2a8c4a;
+    --clr2: #64c27b;
     --clr3: #9bfab0;
     --clr4: #d0fdd7;
     --clr5: #ffffff;

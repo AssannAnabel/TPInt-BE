@@ -19,7 +19,6 @@
   align-items: center;
 }
 
-/* HTML: <div class="loader"></div> */
 .loader {
   display: flex;
   align-items: center;
@@ -44,3 +43,11 @@
     transform: rotate(1turn)
   }
 }
+
+.title-stock {
+  margin-top: 50px;
+  text-align: center;
+  color: var(--clr5);
+  font-size: 50px;
+}
+

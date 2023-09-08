@@ -1,22 +1,16 @@
 import { React } from "react";
 import './Cards.css'
 import { useNavigate } from 'react-router-dom'
-import { formatPrice } from "../utils/fomatPrice";
 
-function Cards({ invtry }) {
+function Cards({ title, image }) {
 
-    const { id, product, price, category, amount, imagenes } = invtry
     return (
 
-        <article id={id} className='box-container' onClick={() => useNavigate('/')}>
-            <h1>{product}</h1>
-            <p className='image-container'><img src={imagenes} alt="image" /></p>
-            <h3>{category} </h3>
-            <h5>${formatPrice(price)}</h5>
-            <h5>cantidad:{amount}</h5>
+        <article className='box-container' onClick={() => useNavigate('/')}>
+            <h1 className="title-container" >{title}</h1>
+            <img src={image} alt="image" className='image-container'/>
         </article>
     )
-
 }
 
 export default Cards;

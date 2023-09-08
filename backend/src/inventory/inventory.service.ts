@@ -1,4 +1,5 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
+import { Inventory } from './inventory.interface';
 
 const URL_invtry = 'http://localhost:3030/inventory/'
 
@@ -23,6 +24,15 @@ export class InventoryService {
 
     async getAllInventory(): Promise<any[]> {
         return await this.getInvtry();
+    }
+
+    async getInvtryByItem(item: string): Promise<any[]>{
+        const res = await fetch(URL_invtry);
+        const allInvtry = await res.json();
+        const items = allInvtry.filter((invtry: Inventory)=> invtry.item === item)
+        if(!items.length) throw new NotFoundException(`No hay ${item} en stock`)
+        return items;
+
     }
 
     async getInvtryById(id: number): Promise<any> {

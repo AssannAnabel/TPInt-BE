@@ -1,0 +1,11 @@
+.footer-format{
+    display: flex;
+    background-color: var(--clr1);
+    justify-content: center;
+}
+
+.footer-format img{
+    justify-content: center;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}

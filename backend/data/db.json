@@ -418,6 +418,25 @@
       "price": "102036,05",
       "amount": "15",
       "id": 42
+    },
+    {
+      "code": "FER100",
+      "product": "Taladro Percutor",
+      "description": "taladro percutor necesario para todos las tareas del hogar",
+      "price": "2000",
+      "amount": "20",
+      "imagenes": "https://http2.mlstatic.com/D_NQ_NP_757533-MLA49973674991_052022-O.webp",
+      "id": 43
+    },
+    {
+      "code": "V 500348",
+      "product": "Botin Pampero Flore c/punta marron n°40",
+      "description": "Botín de trabajo de flor con punta marrón, tamaño 40",
+      "price": 3102598,
+      "item": "ropa trabajo",
+      "qty": 3,
+      "images": "",
+      "id": 44
     }
   ]
 }

@@ -15,26 +15,25 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 function Carousel() {
     return (
         <>
-            <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                }}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
-            >
+        <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+            }}
+            pagination={{
+                clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="swiper-format"
+        >
                 <SwiperSlide>
                     <div className='carousel-format'>
                         <img src="./farm-gate.jpg" className="responsive-img" alt="tractor-arando" />
                         <div>
                             <h5 className="slide-text">Comprometidos con lo que hacen el campo</h5>
-                            <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -43,7 +42,6 @@ function Carousel() {
                         <img src="./open-field.jpg" className="responsive-img" alt="campo-cosechado" />
                         <div>
                             <h5 className="slide-text">Asesoramiento y servicio de confianza</h5>
-                            <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -51,8 +49,7 @@ function Carousel() {
                     <div className='carousel-format'>
                         <img src="./open-field-2.jpg" className="responsive-img" alt="tranquera-de-campo" />
                         <div>
-                            <h5 className="slide-text">Comprometidos con lo que hacen el campo</h5>
-                            <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
+                            <h5 className="slide-text">Brindando soluciones al productor</h5>
                         </div>
                     </div>
                 </SwiperSlide>

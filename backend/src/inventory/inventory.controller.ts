@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Post, Body, Delete, Put, HttpCode, ParseIntPipe, HttpStatus } from '@nestjs/common';
+import { Controller, Get, Param, Post, Body, Delete, Put, HttpCode, ParseIntPipe, HttpStatus, Query } from '@nestjs/common';
 import { InventoryService } from './inventory.service';
 import { InventoryDto } from './inventory.dto';
 
@@ -7,8 +7,9 @@ export class InventoryController {
     constructor(private readonly inventoryService: InventoryService) { }
 
     @Get()
-    getAllInventory(): Promise<any[]> {
-        return this.inventoryService.getAllInventory();
+    getAllInventory(@Query('item') item?: string): Promise<any[]> {
+        if (!item) return this.inventoryService.getAllInventory();
+        return this.inventoryService.getInvtryByItem(item)
     }
 
     @Get(':id')
@@ -20,8 +21,8 @@ export class InventoryController {
     }
 
     @Post()
-    addInvtry(@Body() invtry: InventoryDto): Promise<any> {
-        return this.inventoryService.addInvtry(invtry);
+    addInvtry(@Body() invtryDto: InventoryDto): Promise<any> {
+        return this.inventoryService.addInvtry(invtryDto);
     }
 
     // metodo delete es igual que el put, usa metodo 204 no_content
