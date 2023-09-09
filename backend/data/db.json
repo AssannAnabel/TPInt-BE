@@ -437,6 +437,16 @@
       "qty": 3,
       "images": "",
       "id": 44
+    },
+    {
+      "qty": 5,
+      "code": "FER104",
+      "description": "taladro percutor necesario para todas las tareas del hogares",
+      "images": "https://http2.mlstatic.com/D_NQ_NP_757533-MLA49973674991_052022-O.webp",
+      "price": 12300,
+      "product": "Taladro Percutor Makita",
+      "item": "Tranquera",
+      "id": 45
     }
   ]
 }

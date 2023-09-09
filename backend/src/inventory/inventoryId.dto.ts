@@ -1,7 +1,12 @@
 import { IsInt, IsString, IsNumber, IsNotEmpty } from 'class-validator'  //isNotEmpty que no llegue vacio
 import { Expose } from 'class-transformer'
 
-export class InventoryDto {
+export class Inven_idDto {
+    @Expose()
+    @IsInt()
+    @IsNotEmpty()
+    id: number;
+
     @Expose()
     @IsString()
     @IsNotEmpty()
@@ -33,7 +38,7 @@ export class InventoryDto {
     qty: string;
 
     @IsString()
-    @IsNotEmpty()
-    @Expose()
+    //@IsNotEmpty()
+    //@Expose()
     images: string;
 }

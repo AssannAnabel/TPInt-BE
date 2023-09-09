@@ -1,84 +1,106 @@
-import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
+const URL_inventory = 'http://localhost:3030/inventory/';
 import { Inventory } from './inventory.interface';
-
-const URL_invtry = 'http://localhost:3030/inventory/'
+import { InventoryDto } from './inventory.dto';
+import { Inven_idDto } from './inventoryId.dto';
 
 @Injectable()
 export class InventoryService {
-    private async getInvtry(): Promise<any[]> {
-        const res = await fetch(URL_invtry, {
-            method: 'GET',
-            headers: { 'Content-Type': 'application/json' }
-        });
+
+    // private async setId(): Promise<number> {
+    //     const invtry = await this.getInvtry();
+    //     const id = invtry.pop().id +1;
+    //     return id;
+    // }
+    private async getAll(): Promise<Inven_idDto[]> {
+        const res = await fetch(URL_inventory);
         const parsed = await res.json();
-        if (Object.keys(parsed).length) return parsed;
-        throw new NotFoundException(`No encontramos lo que buscabas... `)
+        return parsed;
     }
 
-    private async setId(): Promise<number> {
-        const invtry = await this.getInvtry();
-        const lastInvtry = invtry[invtry.length - 1];
-        const id = lastInvtry.id + 1; //remember zero index array
-        return id;
-    }
-
-    async getAllInventory(): Promise<any[]> {
-        return await this.getInvtry();
-    }
-
-    async getInvtryByItem(item: string): Promise<any[]>{
-        const res = await fetch(URL_invtry);
+    //busqueda por item
+    async getInvtryByItem(item: string): Promise<InventoryDto[]> {
+        const res = await fetch(URL_inventory);
         const allInvtry = await res.json();
-        const items = allInvtry.filter((invtry: Inventory)=> invtry.item === item)
-        if(!items.length) throw new NotFoundException(`No hay ${item} en stock`)
+        const items = allInvtry.filter((invtry: Inventory) => invtry.item === item)
+        if (!items.length) throw new NotFoundException(`No hay ${item} en stock`)
         return items;
+    } 
 
+    async getInvtry(): Promise<InventoryDto[]> {
+        try {
+            return this.getAll();
+        } catch (err) {
+            throw new Error(err);
+        }
     }
-
-    async getInvtryById(id: number): Promise<any> {
-        const res = await fetch(URL_invtry + id, {
-            method: 'GET',
-            headers: { 'Content-Type': 'application/json' }
-        });
-        const parsed = await res.json();     
-        if(Object.keys(parsed).length) return parsed;
-        throw new NotFoundException(`No existe registro en la posicion ${id}`)
+    //GETBYID
+    async getInvtryById(id: number): Promise<InventoryDto> {
+        try {
+            const res = await fetch(URL_inventory + id, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            })
+            const parsed = await res.json();
+            return parsed;
+        } catch (err) {
+            throw new Error(err);
+        }
     }
-
-    async addInvtry(invtry: any): Promise<any> {
-        const id: number = await this.setId();
-        const newInvtry = { ...invtry, id }
-        const res = await fetch(URL_invtry, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(newInvtry)
-        });
-        const parsed = await res.json();
-        if(Object.keys(parsed).length) return parsed;
-        throw new BadRequestException(`Ocurrio un error al crear el nuevo registro`)
+    //POST
+    async createInvtry(invtry: InventoryDto): Promise<InventoryDto> {
+        try {
+            // const id = await this.setId();
+            const newInvtry = { ...invtry };
+            const res = await fetch(URL_inventory, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(newInvtry)
+            });
+            const parsed = await res.json();
+            return parsed;
+        } catch (err) {
+            throw new Error(err);
+        }
     }
+    //DELETE
 
-    async deleteInvtryById(id: number): Promise<any> {
-        const res = await fetch(URL_invtry + id, {
+    async deleteInvtryById(id: number): Promise<InventoryDto> {
+        const res = await fetch(URL_inventory + id, {
             method: 'DELETE',
-            headers: { 'Content-Type': 'application/json' }
-        })
+        });
+
+        if (!res.ok) {
+            throw new Error('Failed to delete');
+        }
+
         const parsed = await res.json();
-        if(!Object.keys(parsed).length) return parsed;
-        throw new NotFoundException(`No existe registro en la posicion ${id} para ser eliminado`)
+        return parsed;
     }
 
-    async updateInvtryById(id: number, body: any): Promise<any> {
-        const isInvtry = await this.getInvtryById(id);
-        if (!Object.keys(isInvtry).length) throw new NotFoundException(`No existe registro en la posicion ${id}`); // si no encuentra el id, corta aca
-        const updateInvtry = { ...body, id }
-        const res = await fetch(URL_invtry + id, {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(updateInvtry)
-        })
-        const parsed = await res.json();
-        if(Object.keys(parsed).length) return parsed;
-        throw new NotFoundException(`No existe registro en la posicion ${id}`)
+
+    //PUT
+    async updateInvtryById(id: number, invtry: InventoryDto): Promise<InventoryDto> {
+        try {
+            const isInvtry = await this.getInvtryById(id);
+            //Object.keys verifica si isInvtry viene con datos, y si no, se detiene ahi.
+            if (!Object.keys(isInvtry).length) return;
+            const updateInvtry = { ...invtry, id };
+            const res = await fetch(URL_inventory + id, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(updateInvtry)
+            });
+            const parsed = await res.json();
+            return parsed;
+        } catch (err) {
+            throw new Error(err)
+        }
     }
 }

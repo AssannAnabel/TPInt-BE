@@ -1,28 +1,28 @@
 import React, { useState } from "react";
 import "./InvtryForm.css"
-import { URL_invtry, getAllInvtry } from "../services/inventoryServices";
+import { URL_invtry } from "../services/inventoryServices";
 import { Link } from "react-router-dom";
 
 function InvtryForm() {
 
     const [newInvtryForm, setNewInvtryForm] = useState([])
 
-    const setId = async () => {
+    /* const setId = async () => {
         const invtry = await getAllInvtry(URL_invtry);
         const lastInvtry = invtry[invtry.length - 1];
         const id = lastInvtry.id + 1; //remember zero index array
         return id;
-    }
+    } */
 
     const addInvtry = async (invtry) => {
         try {
-            const id = await setId();
-            const newInvtry = { ...invtry, id }
-            console.log(newInvtry);
+            //const id = await setId();
+            //const newInvtry = { ...invtry, id }
+            //console.log(newInvtry);
             const res = await fetch(URL_invtry, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(newInvtry)
+                body: JSON.stringify(invtry)
             });
             //if (!res.ok) throw new Error(`Response not OK`)
             const parsed = await res.json()
