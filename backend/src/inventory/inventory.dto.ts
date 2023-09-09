@@ -1,7 +1,10 @@
-import { IsInt, IsString, IsNumber } from "class-validator";
+import { IsInt, IsString, IsNumber, IsNotEmpty } from "class-validator";
+import {Expose} from 'class-transformer'
 
 export class InventoryDto {
+    @Expose()
     @IsString()
+    @IsNotEmpty()
     code: string;
     
     @IsString()

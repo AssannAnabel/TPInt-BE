@@ -2,12 +2,12 @@ export const URL_invtry = 'http://localhost:3000/inventory';
 
 const controller = new AbortController();
 
-async function setId() {
+/* async function setId() {
     const invtry = await this.getAllInvtry(URL_invtry);
     const lastInvtry = invtry[invtry.length - 1];
     const id = lastInvtry.id + 1; //remember zero index array
     return id;
-}
+} */
 
 export const getAllInvtry = async (URL_invtry) => {
     try {
@@ -39,7 +39,7 @@ export const getAllInvtryById = async (id) => {
     }
 }
 
-export const addInvtry = async (invtry) => {
+/* export const addInvtry = async (invtry) => {
     try {
         const id = await setId();
         const newInvtry = { ...invtry, id }
@@ -54,7 +54,7 @@ export const addInvtry = async (invtry) => {
     } catch (err) {
         throw new Error(err);
     }
-}
+} */
 
 
 

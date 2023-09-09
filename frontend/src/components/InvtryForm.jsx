@@ -24,7 +24,7 @@ function InvtryForm() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(newInvtry)
             });
-            if (!res.ok) throw new Error(`Response not OK`)
+            //if (!res.ok) throw new Error(`Response not OK`)
             const parsed = await res.json()
             setNewInvtryForm(parsed);
         } catch (err) {
@@ -32,9 +32,9 @@ function InvtryForm() {
         }
     }
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault();
-        addInvtry(newInvtryForm)
+        await addInvtry(newInvtryForm)
         console.log(newInvtryForm);
     }
 
@@ -83,22 +83,22 @@ function InvtryForm() {
                     <option value="ropa trabajo">Ropa de Trabajo</option>
                 </select>
             </label>
-            <label htmlFor="amount" className="form-label">
+            <label htmlFor="qty" className="form-label">
                 Unidades de producto
-                <input type="text" name="amount" id="amount" required
+                <input type="text" name="qty" id="qty" required
                     className="form-input"
                     onChange={handleChange} />
             </label>
-            <label htmlFor="imagenes" className="form-label">
+            <label htmlFor="images" className="form-label">
                 Imagen descriptiva (copia y pega una ruta de internet)
-                <input type="text" name="imagenes" id="imagenes" required
+                <input type="text" name="images" id="images" required
                     className="form-input"
                     onChange={handleChange} />
             </label>
 
             <div className="form-buttons">
                 <input type="submit" value="Enviar" className="form-button" />
-                <button className="form-button"><Link to={"/"}>Volver</Link></button>   
+                <button className="form-button"><Link to={"/"}>Volver</Link></button>
                 <input type="reset" value="Limpiar" className="form-button" />
 
             </div>
