@@ -1,4 +1,4 @@
-.layout {
+.layout{
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
@@ -7,9 +7,6 @@
   justify-content: center;
 }
 
-.link-login {
-  cursor: pointer;
-}
 
 .loading-format {
   height: 100%;
@@ -49,5 +46,9 @@
   text-align: center;
   color: var(--clr5);
   font-size: 50px;
+}
+
+.link-format{
+  list-style-type: none;
 }
 

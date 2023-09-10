@@ -1,16 +1,6 @@
 {
   "inventory": [
     {
-      "id": 1,
-      "code": "FER001",
-      "product": "Martillo",
-      "description": "Martillo de carpintero de 16 oz, ideal para trabajos de construcción y carpintería.",
-      "price": 502.12,
-      "item": "Ferretería",
-      "qty": 20,
-      "image": ""
-    },
-    {
       "id": 2,
       "code": "FER002",
       "product": "Destornillador Set",

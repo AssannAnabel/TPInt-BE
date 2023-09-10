@@ -1,8 +1,14 @@
-.footer-format{
-    display: flex;
-    background-color: var(--clr1);
-    justify-content: center;
-}
+.footer-format {
+    background-color: var(--clr1); 
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Estilos para la imagen del logo */
+  .footer-format img {
+    max-width: 200px; /* Establece el tamaño máximo de la imagen */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
 
 .footer-format img{
     justify-content: center;

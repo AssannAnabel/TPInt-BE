@@ -5,72 +5,62 @@ import { Link } from "react-router-dom";
 
 function InvtryForm() {
 
-    const [newInvtryForm, setNewInvtryForm] = useState([])
-
-    /* const setId = async () => {
-        const invtry = await getAllInvtry(URL_invtry);
-        const lastInvtry = invtry[invtry.length - 1];
-        const id = lastInvtry.id + 1; //remember zero index array
-        return id;
-    } */
-
-    const addInvtry = async (invtry) => {
-        try {
-            //const id = await setId();
-            //const newInvtry = { ...invtry, id }
-            //console.log(newInvtry);
-            const res = await fetch(URL_invtry, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(invtry)
-            });
-            //if (!res.ok) throw new Error(`Response not OK`)
-            const parsed = await res.json()
-            setNewInvtryForm(parsed);
-        } catch (err) {
-            throw new Error(err);
-        }
-    }
+    const [newInvtryForm, setNewInvtryForm] = useState({})
 
     async function handleSubmit(e) {
         e.preventDefault();
-        await addInvtry(newInvtryForm)
-        console.log(newInvtryForm);
+        try {
+            const res = await fetch(URL_invtry, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(newInvtryForm)
+            });
+            if (res.ok) return `Success`
+            console.log(newInvtryForm);
+            //const parsed = await res.json()
+            //setNewInvtryForm(parsed);
+        } catch (err) {
+            throw new Error(err);
+        }
+
     }
 
     function handleChange(e) {
-        setNewInvtryForm((prev) => ({
-            ...prev,
-            [e.target.name]: e.target.value
+        e.preventDefault();
+        setNewInvtryForm((newInvtryForm) => ({
+            ...newInvtryForm,
+            [e.target.name]: e.target.value,
         }));
     }
 
-
-
     return (
-        <form action="" method="post" className="form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
             <label htmlFor="code" className="form-label">
                 Código de producto
                 <input type="text" name="code" id="code" placeholder="Código de producto" required
                     className="form-input"
+                    //value={newInvtryForm.code}
                     onChange={handleChange} />
             </label>
             <label htmlFor="product" className="form-label">
                 Nombre del producto
                 <input type="text" name="product" id="product" required
                     className="form-input"
+                    //value={newInvtryForm.product}
                     onChange={handleChange} />
             </label>
             <label htmlFor="description" className="form-label">
                 Descripción
                 <input type="text" name="description" id="description" required
                     className="form-input"
+                    //value={newInvtryForm.description}
                     onChange={handleChange} />
             </label>
             <label htmlFor="price" className="form-label">
                 Precio
                 <input type="text" name="price" id="price" required
                     className="form-input"
+                    //value={newInvtryForm.price}
                     onChange={handleChange} />
             </label>
             <label htmlFor="item" className="form-label">
