@@ -3,32 +3,47 @@ import "./InvtryForm.css"
 import { URL_invtry } from "../services/inventoryServices";
 import { Link } from "react-router-dom";
 
+
 function InvtryForm() {
 
-    const [newInvtryForm, setNewInvtryForm] = useState({})
+    const [newInvtryForm, setNewInvtryForm] = useState([])
 
-    async function handleSubmit(e) {
-        e.preventDefault();
+    const addInvtry = async (invtry) => {
         try {
             const res = await fetch(URL_invtry, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(newInvtryForm)
+                body: JSON.stringify(invtry)
             });
             if (res.ok) return `Success`
-            console.log(newInvtryForm);
-            //const parsed = await res.json()
-            //setNewInvtryForm(parsed);
+            console.log(invtry);
+            const parsed = await res.json()
+            setNewInvtryForm(parsed);
         } catch (err) {
             throw new Error(err);
         }
+    }
 
+    async function handleSubmit(e) {
+        e.preventDefault();
+        let newProduct = {
+            code: e.target.code.value,
+            product: e.target.product.value,
+            description: e.target.description.value,
+            price: Number(e.target.price.value),
+            item: e.target.item.value,
+            qty: Number(e.target.qty.value),
+            images: e.target.images.value,
+        }
+        await addInvtry(newProduct)
+        console.log(newProduct);
+        window.location.reload()
     }
 
     function handleChange(e) {
         e.preventDefault();
-        setNewInvtryForm((newInvtryForm) => ({
-            ...newInvtryForm,
+        setNewInvtryForm((prev) => ({
+            ...prev,
             [e.target.name]: e.target.value,
         }));
     }
@@ -37,7 +52,7 @@ function InvtryForm() {
         <form className="form" onSubmit={handleSubmit}>
             <label htmlFor="code" className="form-label">
                 Código de producto
-                <input type="text" name="code" id="code" placeholder="Código de producto" required
+                <input type="text" name="code" id="code" required
                     className="form-input"
                     //value={newInvtryForm.code}
                     onChange={handleChange} />

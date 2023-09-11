@@ -23,6 +23,7 @@ export class InventoryService {
         const res = await fetch(URL_inventory);
         const allInvtry = await res.json();
         const items = allInvtry.filter((invtry: Inventory) => invtry.item === item)
+        console.log(items);        
         if (!items.length) throw new NotFoundException(`No hay ${item} en stock`)
         return items;
     } 

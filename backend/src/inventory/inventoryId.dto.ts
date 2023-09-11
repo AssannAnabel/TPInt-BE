@@ -25,7 +25,7 @@ export class Inven_idDto {
     @Expose()
     @IsNumber()
     @IsNotEmpty()
-    price: string;
+    price: number;
 
     @Expose()
     @IsString()
@@ -35,7 +35,7 @@ export class Inven_idDto {
     @Expose()
     @IsInt()
     @IsNotEmpty()
-    qty: string;
+    qty: number;
 
     @IsString()
     //@IsNotEmpty()

@@ -66,3 +66,30 @@ A todos los endpoints previamente creados agregarle los codigos de respuesta uti
 En este sprint ya tenemos todos los metodos **CRUD** implementados, y cada uno con una respuesta que nos devuelve la solicitud **HTTP** (generada por nosotros, a traves de **@Res()**)
 
 [Trello de actividades Ágiles -III Sprint:](https://trello.com/b/Xb5CvUle/inventario)
+
+## IV Sprint -5/9 al 11/9-
+
+8. **Error Handling**
+Agregar excepciones a todos los endpoints previamente creados
+9. **Module - Validations**
+Agregar modulos y validaciones
+10. **DTO - Validation Pipe** 
+Crear y agregar DTOs al proyecto y agregar validaciones
+
+En este ultimo sprint se agregaron excepciones en el archivo inventory.controller.ts, del endpoint generado, para asi poder resolver las request solicitadas sin necesidad de entrar al service del endpoint.
+Luego, se ordenó el codigo y se agregó el modulo correspondiente al endpoint, y se agregaron ValidationPipes para dar una respuesta propia a la solicitud.
+Por ultimo, se crearon DTO's para tipar los datos que se comunicaran entre el frontend y el backend, tipando las propiedades que tendran los objetos DTO, para este tipado nos ayudaremos de NestJS, instalando en la carpeta backend del proyecto:
+>npm i class-validator class-transformer
+
+Luego, nos encargaremos de tipar las firmas de las funciones tanto en el controller como en el service con los DTO previamente creados.
+
+**npm necesarios para correr el front**
+>npm install react-icons --save
+
+Con este npm podremos ver los iconos en la tabla de inventario.
+
+**[http://localhost:5173/](http://localhost:5173/)**
+
+En este puerto mostraremos por el front el proyecto
+
+[Trello de actividades Ágiles -IV Sprint:](https://trello.com/b/Xb5CvUle/inventario)

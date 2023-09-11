@@ -1,6 +1,6 @@
 import {
     Controller, Get, Post, Put, Delete, Param, Body, Res, HttpStatus, NotFoundException, BadRequestException, ValidationPipe,
-    UsePipes, ParseIntPipe
+    UsePipes, ParseIntPipe, Query
 } from '@nestjs/common';
 import { InventoryService } from './inventory.service';
 //import {Inventory} from './inventory.interface';
@@ -24,6 +24,12 @@ export class InventoryController {
         }
     }
 
+    @Get()
+    async getAllInventory(@Query('item') item?: string): Promise<InventoryDto[]> {
+        if (item) return await this.inventoryService.getInvtryByItem(item)
+        throw new NotFoundException(`data not found`)
+    }
+
     @Get(':id')
     async getInvtryById(@Param('id') id: number, @Res() res): Promise<InventoryDto> {
         try {
@@ -36,7 +42,7 @@ export class InventoryController {
             throw new NotFoundException(`Cannot get inventory with id ${id}`);
         }
     }
-    
+
     @Post()
     @UsePipes(new ValidationPipe({ transform: true }))
     async createInvtry(@Body() invtry: InventoryDto, @Res() res): Promise<InventoryDto> {

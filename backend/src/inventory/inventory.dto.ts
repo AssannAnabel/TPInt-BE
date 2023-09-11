@@ -20,7 +20,7 @@ export class InventoryDto {
     @Expose()
     @IsNumber()
     @IsNotEmpty()
-    price: string;
+    price: number;
 
     @Expose()
     @IsString()
@@ -30,7 +30,7 @@ export class InventoryDto {
     @Expose()
     @IsInt()
     @IsNotEmpty()
-    qty: string;
+    qty: number;
 
     @IsString()
     @IsNotEmpty()

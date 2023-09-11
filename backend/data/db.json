@@ -121,16 +121,6 @@
       "image": ""
     },
     {
-      "id": 15,
-      "code": "FER015",
-      "product": "Cerradura",
-      "description": "Cerradura de seguridad para puertas con llaves.",
-      "price": 6352.23,
-      "item": "Ferretería",
-      "qty": 12,
-      "image": ""
-    },
-    {
       "id": 16,
       "code": "FER016",
       "product": "Escalera Plegable",
@@ -400,14 +390,24 @@
       "id": 44
     },
     {
-      "qty": 5,
-      "code": "FER104",
-      "description": "taladro percutor necesario para todas las tareas del hogares",
-      "images": "https://http2.mlstatic.com/D_NQ_NP_757533-MLA49973674991_052022-O.webp",
-      "price": 12300,
-      "product": "Taladro Percutor Makita",
-      "item": "Tranquera",
+      "code": "FER100",
+      "product": "Taladro Percutor",
+      "description": "atornillador electrico Makita premium",
+      "price": 45482,
+      "item": "Ferretería",
+      "qty": 147,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webp",
       "id": 45
+    },
+    {
+      "code": "FER102",
+      "product": "Taladro Percutor Makita",
+      "description": "taladro percutor necesario para todas las tareas del hogares",
+      "price": 20000,
+      "item": "Ferretería",
+      "qty": 2000,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webpl",
+      "id": 46
     }
   ]
 }

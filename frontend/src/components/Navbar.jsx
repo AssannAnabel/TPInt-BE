@@ -8,7 +8,7 @@ function Navbar() {
             <ul className="ul-format">
                 <li><Link>Nosotros</Link></li>
                 <li><Link to={'/LoadInvtry'}>Agregar ítem</Link></li>
-                <li><Link to={".layout"}>Stock</Link></li>
+                <li><Link to={"/AllProducts"}>Stock</Link></li>
                 <li><Link to={"/Login"}>Acceso Usuarios</Link></li>
             </ul>
         </nav>
