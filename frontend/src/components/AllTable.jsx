@@ -12,31 +12,26 @@ function AllTable() {
 
     const [deleteInvtry, setDeleteInvtry] = useState()
 
-    async function deleteOne(invtry){
+    async function deleteOne(invtry) {
         fetch(`${URL_invtry}${invtry.id}`, {
-          method: "DELETE"
+            method: "DELETE"
         })
-          .then((res) => res.json())
-          .then(data => {
-            setDeleteInvtry(data);
-            //window.location.reload()
-          })
-          .catch((err) => console.error(err));
-      }
+            .then((res) => res.json())
+            .then(data => {
+                setDeleteInvtry(data);
+                window.location.reload()
+            })
+            .catch((err) => console.error(err));
+    }
 
-    /* function handleDelete(e){
-        e.preventDefault();
-        console.log(`entra`);
-        deleteInvtryById(invtry.id);
-    } */
-
-
+    if (isLoading) return <div className='loader'></div>;
+    if (error) return <div><h1>{error}</h1></div>;
     return (
         <>
             <section className='layout'>
                 {
                     <div className="table-container">
-                                <h1>Lista de Productos</h1>
+                        <h1>Lista de Productos</h1>
                         <table className="produc-table">
                             <thead>
                                 <tr>
