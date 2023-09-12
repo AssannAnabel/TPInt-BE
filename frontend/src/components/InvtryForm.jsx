@@ -1,28 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./InvtryForm.css"
-import { URL_invtry } from "../services/inventoryServices";
+import { addInvtry } from "../services/inventoryServices";
 import { Link } from "react-router-dom";
 
 
 function InvtryForm() {
-
-    const [newInvtryForm, setNewInvtryForm] = useState([])
-
-    const addInvtry = async (invtry) => {
-        try {
-            const res = await fetch(URL_invtry, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(invtry)
-            });
-            if (res.ok) return `Success`
-            console.log(invtry);
-            const parsed = await res.json()
-            setNewInvtryForm(parsed);
-        } catch (err) {
-            throw new Error(err);
-        }
-    }
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -35,17 +17,17 @@ function InvtryForm() {
             qty: Number(e.target.qty.value),
             images: e.target.images.value,
         }
-        await addInvtry(newProduct)
-        console.log(newProduct);
+        await addInvtry(newProduct);
         window.location.reload()
     }
 
     function handleChange(e) {
         e.preventDefault();
-        setNewInvtryForm((prev) => ({
+        const product = ((prev) => ({
             ...prev,
             [e.target.name]: e.target.value,
         }));
+        return product
     }
 
     return (
@@ -54,28 +36,24 @@ function InvtryForm() {
                 Código de producto
                 <input type="text" name="code" id="code" required
                     className="form-input"
-                    //value={newInvtryForm.code}
                     onChange={handleChange} />
             </label>
             <label htmlFor="product" className="form-label">
                 Nombre del producto
                 <input type="text" name="product" id="product" required
                     className="form-input"
-                    //value={newInvtryForm.product}
                     onChange={handleChange} />
             </label>
             <label htmlFor="description" className="form-label">
                 Descripción
                 <input type="text" name="description" id="description" required
                     className="form-input"
-                    //value={newInvtryForm.description}
                     onChange={handleChange} />
             </label>
             <label htmlFor="price" className="form-label">
                 Precio
-                <input type="text" name="price" id="price" required
+                <input type="number" name="price" id="price" required
                     className="form-input"
-                    //value={newInvtryForm.price}
                     onChange={handleChange} />
             </label>
             <label htmlFor="item" className="form-label">
@@ -90,7 +68,7 @@ function InvtryForm() {
             </label>
             <label htmlFor="qty" className="form-label">
                 Unidades de producto
-                <input type="text" name="qty" id="qty" required
+                <input type="number" name="qty" id="qty" required
                     className="form-input"
                     onChange={handleChange} />
             </label>

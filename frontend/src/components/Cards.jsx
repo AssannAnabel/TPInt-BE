@@ -7,7 +7,7 @@ function Cards({ title, image }) {
 
         <article className='box-container'>
             <h1 className="title-container" >{title}</h1>
-            <img src={image} alt="image" className='image-container'/>
+            <img src={image} alt={title} className='image-container'/>
         </article>
     )
 }

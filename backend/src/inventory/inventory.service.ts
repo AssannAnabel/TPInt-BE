@@ -19,7 +19,7 @@ export class InventoryService {
     }
 
     //busqueda por item
-    async getInvtryByItem(item: string): Promise<InventoryDto[]> {
+    async getInvtryByItem(item: string): Promise<Inven_idDto[]> {
         const res = await fetch(URL_inventory);
         const allInvtry = await res.json();
         const items = allInvtry.filter((invtry: Inventory) => invtry.item === item)

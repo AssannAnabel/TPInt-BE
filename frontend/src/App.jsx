@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import './App.css'
 import LoadInvtry from './pages/LoadInvtry';
 import AllProducts from './pages/AllProducts';
+import Ferreteria from './pages/Ferreteria';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/login' element={<Login />} />
-          <Route exact path='/loadInvtry' element={<LoadInvtry/>} />
-          <Route exact path='/allProducts' element={<AllProducts/>}  />
+          <Route exact path='/loadInvtry' element={<LoadInvtry />} />
+          <Route exact path='/allProducts' element={<AllProducts />} />
+          <Route exact path='/ferreteria' element={<Ferreteria />} />
         </Routes>
       </BrowserRouter>
     </>

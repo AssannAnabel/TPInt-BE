@@ -251,16 +251,6 @@
       "image": ""
     },
     {
-      "id": 30,
-      "code": "FER030",
-      "product": "Guantes de Trabajo",
-      "description": "Par de guantes de trabajo resistentes a la abrasión y al corte.",
-      "price": 836.99,
-      "item": "Ferretería",
-      "qty": 40,
-      "image": ""
-    },
-    {
       "id": 31,
       "code": "TRQ001",
       "product": "Tranquera de Madera Clásica",
@@ -400,14 +390,24 @@
       "id": 45
     },
     {
-      "code": "FER102",
-      "product": "Taladro Percutor Makita",
-      "description": "taladro percutor necesario para todas las tareas del hogares",
-      "price": 20000,
-      "item": "Ferretería",
-      "qty": 2000,
+      "code": "FER100",
+      "product": "Taladro Percutor",
+      "description": "atornillador electrico Makita premium",
+      "price": 45482,
+      "item": "Tranquera",
+      "qty": 147,
       "images": "https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webpl",
       "id": 46
+    },
+    {
+      "code": "FER1023",
+      "product": "Taladro Percutor Makita",
+      "description": "atornillador electrico Makita premium",
+      "price": 3000,
+      "item": "ropa trabajo",
+      "qty": 2000,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webpl",
+      "id": 47
     }
   ]
 }

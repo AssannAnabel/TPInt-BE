@@ -15,19 +15,18 @@ export class InventoryController {
     constructor(private readonly inventoryService: InventoryService) { }
 
     @Get()
-    async getInvtry(@Res() res): Promise<Inven_idDto[]> {
+    async getInvtry(@Res() res, @Query('item') item?: string): Promise<Inven_idDto[]> {
         try {
-            const serviceRes = await this.inventoryService.getInvtry()
-            return res.status(HttpStatus.OK).send(serviceRes);
+            if (item) {
+                const serviceRes = await this.inventoryService.getInvtryByItem(item);
+                return res.status(HttpStatus.OK).send(serviceRes);
+            } else {
+                const serviceRes = await this.inventoryService.getInvtry()
+                return res.status(HttpStatus.OK).send(serviceRes);
+            }
         } catch (error) {
             throw new NotFoundException('data not found');
         }
-    }
-
-    @Get()
-    async getAllInventory(@Query('item') item?: string): Promise<InventoryDto[]> {
-        if (item) return await this.inventoryService.getInvtryByItem(item)
-        throw new NotFoundException(`data not found`)
     }
 
     @Get(':id')
