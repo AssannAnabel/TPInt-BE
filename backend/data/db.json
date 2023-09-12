@@ -1,304 +1,354 @@
 {
   "inventory": [
     {
+      "id": 1,
+      "code": "FER001",
+      "product": "Martillo",
+      "description": "Martillo de carpintero de 16 oz, ideal para trabajos de construcción y carpintería.",
+      "price": 3.987,
+      "item": "Ferretería",
+      "qty": 20,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_842593-MLU70418534251_072023-O.webp"
+    },
+    {
+      "id": 2,
+      "code": "FER002",
+      "product": "Destornillador Set",
+      "description": "Juego de destornilladores Phillips y planos con mangos ergonómicos.",
+      "price": 9.845,
+      "item": "Ferretería",
+      "qty": 30,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_972592-MLA49410958106_032022-V.webp"
+    },
+    {
       "id": 3,
       "code": "FER003",
-      "product": "Sierra Manual",
-      "description": "Sierra manual para corte de madera con hoja afilada de alta calidad.",
-      "price": 1003.32,
+      "product": "Sierra Caladora",
+      "description": "Sierra Caladora para corte de madera con hoja afilada de alta calidad.",
+      "price": 34.1,
       "item": "Ferretería",
       "qty": 15,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_765112-MLA51603926026_092022-V.webp"
     },
     {
       "id": 4,
       "code": "FER004",
       "product": "Cinta Métrica",
       "description": "Cinta métrica de 5 metros con bloqueo y marca de inicio.",
-      "price": 435.2,
+      "price": 1.567,
       "item": "Ferretería",
       "qty": 50,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_653155-MLA69976483392_062023-V.webp"
     },
     {
       "id": 5,
       "code": "FER005",
       "product": "Taladro Inalámbrico",
       "description": "Taladro inalámbrico de alta potencia con batería recargable.",
-      "price": 20001.25,
+      "price": 120.001,
       "item": "Ferretería",
       "qty": 10,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_904928-MLA44749843726_012021-V.webp"
     },
     {
       "id": 6,
       "code": "FER006",
       "product": "Llave Ajustable",
       "description": "Llave ajustable de 10 pulgadas para tuercas y tornillos.",
-      "price": 4025.21,
+      "price": 4.025,
       "item": "Ferretería",
       "qty": 25,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_901204-MLU70332367418_072023-V.webp"
     },
     {
       "id": 7,
       "code": "FER007",
-      "product": "Pistola de Calor",
-      "description": "Pistola de calor para trabajos de soldadura y termoformado.",
-      "price": 999.99,
+      "product": "Soldador de estaño",
+      "description": "Soldador de estaño tipo pìstola 110W Punta Redonda Salkor.",
+      "price": 21.999,
       "item": "Ferretería",
       "qty": 8,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_775046-MLU71478951320_092023-V.webp"
     },
     {
       "id": 8,
       "code": "FER008",
       "product": "Serrucho",
       "description": "Serrucho de corte fino con dientes afilados para madera y plástico.",
-      "price": 1122.12,
+      "price": 4.944,
       "item": "Ferretería",
       "qty": 18,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_940732-MLA31082367209_062019-V.webp"
     },
     {
       "id": 9,
       "code": "FER009",
       "product": "Nivel de Burbuja",
       "description": "Nivel de burbuja de 12 pulgadas para alineación precisa.",
-      "price": 605.65,
+      "price": 2.605,
       "item": "Ferretería",
       "qty": 40,
-      "imagen": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_816314-MLU71133540613_082023-V.webp"
     },
     {
       "id": 10,
       "code": "FER010",
-      "product": "Tornillos Set",
-      "description": "Set de tornillos variados de diferentes tamaños y tipos.",
-      "price": 301.55,
+      "product": "Pico de loro",
+      "description": "Pinza tipo pico de loro serie 700 Cromo Vanadio.",
+      "price": 20.301,
       "item": "Ferretería",
       "qty": 100,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_867529-MLA41931152730_052020-V.webp"
     },
     {
       "id": 11,
       "code": "FER011",
-      "product": "Alicates",
-      "description": "Alicates multifuncionales para cortar, doblar y sujetar.",
-      "price": 604.4,
+      "product": "Alicate",
+      "description": "Alicate multifuncionales para cortar, doblar y sujetar.",
+      "price": 1.604,
       "item": "Ferretería",
       "qty": 28,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_661513-MLA49343063858_032022-V.webp"
     },
     {
       "id": 12,
       "code": "FER012",
       "product": "Pintura en Aerosol",
       "description": "Pintura en aerosol de secado rápido y amplia gama de colores.",
-      "price": 1403.2,
+      "price": 7.403,
       "item": "Ferretería",
       "qty": 60,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_877899-MLU70884894814_082023-V.webp"
     },
     {
       "id": 13,
       "code": "FER013",
       "product": "Brocas Set",
       "description": "Set de brocas para taladro de diversos tamaños y tipos de perforación.",
-      "price": 3025.25,
+      "price": 43.025,
       "item": "Ferretería",
       "qty": 25,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_796639-MLA69817549676_062023-O.webp"
     },
     {
       "id": 14,
       "code": "FER014",
       "product": "Gafas de Seguridad",
       "description": "Gafas de seguridad con protección UV y resistencia a impactos.",
-      "price": 1254.23,
+      "price": 12.541,
       "item": "Ferretería",
       "qty": 35,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_770937-MLA50723707135_072022-V.webp"
+    },
+    {
+      "id": 15,
+      "code": "FER015",
+      "product": "Cerradura",
+      "description": "Cerradura de seguridad para puertas con llaves.",
+      "price": 26.352,
+      "item": "Ferretería",
+      "qty": 12,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_860313-MLA44217310789_122020-W.webp"
     },
     {
       "id": 16,
       "code": "FER016",
       "product": "Escalera Plegable",
       "description": "Escalera plegable de aluminio de 6 pies de altura.",
-      "price": 10563.23,
+      "price": 110.563,
       "item": "Ferretería",
       "qty": 6,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_936210-MLA71410234906_092023-V.webp"
     },
     {
       "id": 17,
       "code": "FER017",
       "product": "Cepillo de Carpintero",
       "description": "Cepillo de carpintero con cuchillas intercambiables para acabados finos.",
-      "price": 702.65,
+      "price": 5.702,
       "item": "Ferretería",
       "qty": 20,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_630403-MLU70610850380_072023-V.webp"
+    },
+    {
+      "id": 18,
+      "code": "FER018",
+      "product": "Clavos",
+      "description": "Clavos Espiralado Punta Paris 5 Pulgadas por 1 Kg para proyectos de construcción.",
+      "price": 2.865,
+      "item": "Ferretería",
+      "qty": 200,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_810262-MLA40816851128_022020-V.webp"
     },
     {
       "id": 19,
       "code": "FER019",
       "product": "Taladro Percutor",
       "description": "Taladro percutor con función de impacto para perforaciones en concreto.",
-      "price": 11654.45,
+      "price": 54.871,
       "item": "Ferretería",
       "qty": 8,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_951491-MLA48925012105_012022-V.webp"
     },
     {
       "id": 20,
       "code": "FER020",
       "product": "Llave de Tubo",
       "description": "Llave de tubo ajustable para trabajos en tuberías y plomería.",
-      "price": 6205.85,
+      "price": 26.205,
       "item": "Ferretería",
       "qty": 14,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_622748-MLU70634226894_072023-V.webp"
     },
     {
       "id": 21,
       "code": "FER021",
       "product": "Taladro de Banco",
       "description": "Taladro de banco con prensa para perforaciones precisas en materiales.",
-      "price": 12900,
+      "price": 62.9,
       "item": "Ferretería",
       "qty": 5,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_729916-MLA46387476471_062021-V.webp"
     },
     {
       "id": 22,
       "code": "FER022",
       "product": "Pegamento para Madera",
       "description": "Pegamento especializado para unir piezas de madera de manera resistente.",
-      "price": 732.25,
+      "price": 5.049,
       "item": "Ferretería",
       "qty": 30,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_746727-MLA44228662340_122020-W.webp"
     },
     {
       "id": 23,
       "code": "FER023",
       "product": "Escuadra",
       "description": "Escuadra de carpintero de 90 grados para marcar y medir ángulos.",
-      "price": 498.99,
+      "price": 2.75,
       "item": "Ferretería",
       "qty": 40,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_769907-MLA71505810262_092023-V.webp"
     },
     {
       "id": 24,
       "code": "FER024",
       "product": "Caja de Herramientas",
       "description": "Caja resistente con compartimentos para organizar y transportar herramientas.",
-      "price": 26658.99,
+      "price": 126.658,
       "item": "Ferretería",
       "qty": 10,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_739093-MLA48161328582_112021-V.webp"
     },
     {
       "id": 25,
       "code": "FER025",
       "product": "Llave de Impacto",
       "description": "Llave de impacto neumática para aflojar tuercas y tornillos.",
-      "price": 5445.5,
+      "price": 65.445,
       "item": "Ferretería",
       "qty": 5,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_829761-MLA71000866729_082023-V.webp"
     },
     {
       "id": 26,
       "code": "FER026",
-      "product": "Caja de Clavos",
-      "description": "Caja surtida de clavos de diversos tamaños y tipos para construcción.",
+      "product": "Soldadora electrica",
+      "description": "Soldadora Inverter Mig alambre Flux Lusqtoof Sml150 Escuadra.",
       "price": 1805.99,
       "item": "Ferretería",
       "qty": 80,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_904327-MLA50382176514_062022-O.webp"
     },
     {
       "id": 27,
       "code": "FER027",
       "product": "Alambre de Soldadura",
       "description": "Rollo de alambre de soldadura para trabajos de soldadura eléctrica.",
-      "price": 15999.25,
+      "price": 45.999,
       "item": "Ferretería",
       "qty": 18,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_695213-MLA69859115213_062023-V.webp"
     },
     {
       "id": 28,
       "code": "FER028",
       "product": "Nivel Láser",
       "description": "Nivel láser autonivelante para alineación precisa en múltiples superficies.",
-      "price": 17999.99,
+      "price": 217.999,
       "item": "Ferretería",
       "qty": 3,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_699249-MLA31600075030_072019-O.webp"
     },
     {
       "id": 29,
       "code": "FER029",
       "product": "Lima",
       "description": "Juego de limas para dar forma y pulir materiales como metal y madera.",
-      "price": 956.75,
+      "price": 21.956,
       "item": "Ferretería",
       "qty": 20,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_866594-MLA49996993773_052022-V.webp"
+    },
+    {
+      "id": 30,
+      "code": "FER030",
+      "product": "Carretilla",
+      "description": "Carretilla Reforzada Chapa De 70 Lts Rueda Neumatica.",
+      "price": 42.836,
+      "item": "Ferretería",
+      "qty": 40,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_806509-MLA50928617413_072022-V.webp"
     },
     {
       "id": 31,
       "code": "TRQ001",
       "product": "Tranquera de Madera Clásica",
       "description": "Tranquera de madera tratada para uso en campos. Diseño clásico con acabado rústico.",
-      "price": 350000,
+      "price": 150.23,
       "item": "Tranquera",
       "qty": 10,
-      "image": ""
+      "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkmI3kUzwTqi8157_5pEAoX76vYXhoI8lStA&usqp=CAU"
     },
     {
       "id": 32,
       "code": "TRQ002",
       "product": "Tranquera Metálica Resistente",
       "description": "Tranquera de metal galvanizado resistente a la intemperie. Ideal para delimitar áreas en campos y fincas.",
-      "price": 480000.5,
+      "price": 205.365,
       "item": "Tranquera",
       "qty": 5,
-      "image": ""
+      "images": "https://i.pinimg.com/564x/10/7e/21/107e219b97adfe865962b632c2149ff7.jpg"
     },
     {
       "id": 33,
       "code": "TRQ003",
-      "product": "Tranquera de PVC Modular",
-      "description": "Tranquera modular de PVC que se ensambla fácilmente. Duradera y de bajo mantenimiento.",
-      "price": 220000.75,
+      "product": "Tranquera Madera Diseño",
+      "description": "Tranquera Madera con diseño personalizado a eleccion.",
+      "price": 320.5,
       "item": "Tranquera",
       "qty": 8,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_815883-MLA50274398203_062022-O.webp"
     },
     {
       "id": 34,
       "code": "TRQ004",
       "product": "Tranquera de Hierro Forjado",
       "description": "Tranquera artesanal de hierro forjado con detalles decorativos. Resistente y elegante.",
-      "price": 670968.25,
+      "price": 470.968,
       "item": "Tranquera",
       "qty": 3,
-      "image": ""
+      "images": "https://i.pinimg.com/originals/71/2f/e9/712fe96e3f8df3b5b83baa9a19753b1d.jpg"
     },
     {
       "id": 35,
       "code": "TRQ030",
       "product": "Tranquera Eléctrica Solar",
-      "description": "Tranquera eléctrica con sistema de apertura y cierre automático mediante energía solar. Control remoto incluido.",
-      "price": 1280000,
+      "description": "Tranquera eléctrica con sistema de apertura y cierre. Control remoto incluido.",
+      "price": 605.123,
       "item": "Tranquera",
       "qty": 2,
-      "image": "https://i.pinimg.com/originals/9a/38/36/9a3836fc49b6dcffa313a0b9a4e074b6.jpg"
+      "images": "http://www.entertyd.com.ar/img/f_prod9_1.jpg"
     },
     {
       "id": 36,
@@ -308,106 +358,77 @@
       "price": 12856.32,
       "item": "ropa trabajo",
       "qty": 25,
-      "image": ""
+      "images": ""
     },
     {
       "id": 37,
       "code": "V 500345",
-      "product": "BOTA CALFOR NAUTICA C/ CUELLO N°43",
-      "description": "Bota de trabajo con cuello, tamaño 43",
-      "price": 14897.8,
+      "product": "Botas de goma",
+      "description": "Bota de goma Pampero, tamaño 43",
+      "price": 14.897,
       "item": "ropa trabajo",
       "qty": 22,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_997571-MLA69961050815_062023-W.webp"
     },
     {
       "id": 38,
       "code": "V 500346",
-      "product": "CAMISA DE TRABAJO PAMPERO T 50",
+      "product": "Camisa de trabajo",
       "description": "Camisa de trabajo, talla 50",
-      "price": 6756.1,
+      "price": 9.756,
       "item": "ropa trabajo",
       "qty": 50,
-      "image": ""
+      "images": "https://http2.mlstatic.com/D_NQ_NP_801582-MLA70834002868_082023-W.webp"
     },
     {
+      "id": 39,
+      "code": "V 500348",
+      "product": "Botin de trabajo",
+      "description": "Botín de trabajo Pampero, talle 42",
+      "price": 31025.98,
+      "item": "ropa trabajo",
+      "qty": 3,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_835667-MLA70923196256_082023-V.webp"
+    },
+    {
+      "id": 40,
       "code": "V 500348",
       "product": "Botin Pampero Flore c/punta marron n°40",
       "description": "Botín de trabajo de flor con punta marrón, tamaño 40",
       "price": 31025.98,
       "item": "ropa trabajo",
       "qty": 3,
-      "image": "",
-      "id": 39
+      "images": ""
     },
     {
-      "code": "V 500348",
-      "product": "Botin Pampero Flore c/punta marron n°40",
-      "description": "Botín de trabajo de flor con punta marrón, tamaño 40",
-      "price": 31025.98,
-      "item": "ropa trabajo",
-      "qty": 3,
-      "image": "",
-      "id": 40
-    },
-    {
-      "code": "V 500348",
-      "product": "Botin Pampero Flore c/punta marron n°40",
-      "description": "Botín de trabajo de flor con punta marrón, tamaño 40",
-      "price": 31025.98,
-      "item": "ropa trabajo",
-      "qty": 3,
-      "image": "",
+      "code": "FER102",
+      "product": "Pala Ancha Gherardi",
+      "description": "pala ancha cabo madera",
+      "price": 27000,
+      "item": "Ferretería",
+      "qty": 60,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_740469-MLA45746906407_042021-O.webp",
       "id": 41
     },
     {
-      "code": "FER100",
-      "product": "Taladro Percutor",
-      "description": "taladro percutor necesario para todos las tareas del hogar",
-      "price": "2000",
-      "amount": "20",
-      "imagenes": "https://http2.mlstatic.com/D_NQ_NP_757533-MLA49973674991_052022-O.webp",
-      "id": 43
-    },
-    {
-      "code": "V 500348",
-      "product": "Botin Pampero Flore c/punta marron n°40",
-      "description": "Botín de trabajo de flor con punta marrón, tamaño 40",
-      "price": 3102598,
-      "item": "ropa trabajo",
-      "qty": 3,
-      "images": "",
-      "id": 44
-    },
-    {
-      "code": "FER100",
-      "product": "Taladro Percutor",
-      "description": "atornillador electrico Makita premium",
-      "price": 45482,
+      "code": "FER120",
+      "product": "Carretilla ",
+      "description": "taladro percutor necesario para todas las tareas del hogar",
+      "price": 2000,
       "item": "Ferretería",
       "qty": 147,
       "images": "https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webp",
-      "id": 45
+      "id": 42
     },
     {
-      "code": "FER100",
-      "product": "Taladro Percutor",
-      "description": "atornillador electrico Makita premium",
-      "price": 45482,
-      "item": "Tranquera",
-      "qty": 147,
-      "images": "https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webpl",
-      "id": 46
-    },
-    {
-      "code": "FER1023",
-      "product": "Taladro Percutor Makita",
-      "description": "atornillador electrico Makita premium",
-      "price": 3000,
-      "item": "ropa trabajo",
-      "qty": 2000,
-      "images": "https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webpl",
-      "id": 47
+      "code": "FER103",
+      "product": "Atornillador electrico",
+      "description": "taladro percutor necesario para todas las tareas del hogar",
+      "price": 10203,
+      "item": "Ferretería",
+      "qty": 200,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webp",
+      "id": 43
     }
   ]
 }

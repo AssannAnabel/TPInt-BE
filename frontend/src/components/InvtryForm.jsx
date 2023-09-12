@@ -1,10 +1,12 @@
 import React from "react";
 import "./InvtryForm.css"
 import { addInvtry } from "../services/inventoryServices";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 function InvtryForm() {
+
+    const navigate = useNavigate()
 
     async function handleSubmit(e) {
         e.preventDefault();
@@ -18,7 +20,7 @@ function InvtryForm() {
             images: e.target.images.value,
         }
         await addInvtry(newProduct);
-        window.location.reload()
+        navigate('/allProducts')
     }
 
     function handleChange(e) {

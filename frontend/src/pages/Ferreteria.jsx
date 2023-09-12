@@ -8,13 +8,14 @@ import { deleteInvtry, getInvtryByItem } from '../services/inventoryServices';
 
 function Ferreteria() {
     const { invtry, error, isLoading } = useContext(InvtryCtx);
-
-    const [itemFerreteria, setItemFerreteria] = useState
-
+    
+    const [itemFerreteria, setItemFerreteria] = useState([])
+    
     const  itemsFerreteria = async() =>{
         try {
             const res = await getInvtryByItem('ropa trabajo');
-            console.log(res);            
+            console.log(res);  
+            setItemFerreteria(res)          
             return res
             // Aquí puedes procesar el array o realizar otras acciones con los datos.
         } catch (error) {
@@ -22,9 +23,9 @@ function Ferreteria() {
             console.error(error);
         }
     }
-
+    
     //const items = getInvtryByItem('ropa trabajo')
-    console.log(itemsFerreteria);
+    //console.log(res);
 
 
     if (isLoading) return <div className='loader'>{isLoading}</div>;
@@ -50,18 +51,18 @@ function Ferreteria() {
                             </tr>
                         </thead>
                         <tbody>
-                            {itemsFerreteria.map((itemsFerreteria) => (
-                                <tr key={itemsFerreteria.id}>
-                                    <td>{itemsFerreteria.code}</td>
-                                    <td>{itemsFerreteria.product} </td>
-                                    <td>{itemsFerreteria.description}</td>
-                                    <td>${formatPrice(itemsFerreteria.price)}</td>
-                                    <td>{itemsFerreteria.item}</td>
-                                    <td>{itemsFerreteria.qty}</td>
-                                    <td> <img src={`${itemsFerreteria.images}`} alt={itemsFerreteria.product} width="100"></img></td>
+                            {itemFerreteria.map((itemFerreteria) => (
+                                <tr key={itemFerreteria.id}>
+                                    <td>{itemFerreteria.code}</td>
+                                    <td>{itemFerreteria.product} </td>
+                                    <td>{itemFerreteria.description}</td>
+                                    <td>${formatPrice(itemFerreteria.price)}</td>
+                                    <td>{itemFerreteria.item}</td>
+                                    <td>{itemFerreteria.qty}</td>
+                                    <td> <img src={`${itemFerreteria.images}`} alt={itemFerreteria.product} width="100"></img></td>
                                     <td><button><IoIosAdd /></button> <button><BiMinus /></button></td>
                                     <td><button className='button-edit' ><AiFillEdit /></button></td>
-                                    <td><button onClick={() => deleteInvtry(itemsFerreteria)}><AiFillDelete /> </button></td>
+                                    <td><button onClick={() => deleteInvtry(itemFerreteria)}><AiFillDelete /> </button></td>
                                 </tr>
                             ))}
                         </tbody>
