@@ -62,6 +62,23 @@ export const deleteInvtry = async (invtry) => {
     }
 }
 
+export const updateInvtryById = async (id, updatedProduct) => {
+    try {
+        const res = await fetch(`${URL_invtry}${id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updatedProduct),
+        });
+        console.log("PRODUCTO NUEVO", updatedProduct);
+        const parsed = await res.json();
+        return parsed;
+    } catch (err) {
+        throw new Error(err);
+    }
+}
+
 export const getInvtryByItem = async (item) => {
     const res = await fetch(URL_invtry)
     const allInvtry = await res.json();
@@ -69,6 +86,6 @@ export const getInvtryByItem = async (item) => {
     //console.log(items);        
     if (!items.length) throw new Error(`No hay ${item} en stock`)
     return items;
-} 
+}
 
 

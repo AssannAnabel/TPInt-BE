@@ -5,6 +5,7 @@ import './App.css'
 import LoadInvtry from './pages/LoadInvtry';
 import AllProducts from './pages/AllProducts';
 import Ferreteria from './pages/Ferreteria';
+import NotFound from './components/Not_Found';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route exact path='/loadInvtry' element={<LoadInvtry />} />
           <Route exact path='/allProducts' element={<AllProducts />} />
           <Route exact path='/ferreteria' element={<Ferreteria />} />
+          <Route exact path='*' element={<NotFound/>} />
         </Routes>
       </BrowserRouter>
     </>

@@ -83,7 +83,7 @@ function InvtryForm() {
 
             <div className="form-buttons">
                 <input type="submit" value="Enviar" className="form-button" />
-                <button className="form-button"><Link to={"/"}>Volver</Link></button>
+                <Link to={"/"}><button className="form-button">Volver</button></Link>
                 <input type="reset" value="Limpiar" className="form-button" />
 
             </div>

@@ -19,25 +19,25 @@ export class InventoryController {
         try {
             if (item) {
                 const serviceRes = await this.inventoryService.getInvtryByItem(item);
-                return res.status(HttpStatus.OK).send(serviceRes);
+                if (serviceRes) return res.status(HttpStatus.OK).send(serviceRes);
             } else {
                 const serviceRes = await this.inventoryService.getInvtry()
                 return res.status(HttpStatus.OK).send(serviceRes);
             }
-        } catch (error) {
-            throw new NotFoundException('data not found');
+        } catch (err) {
+            throw res.status(HttpStatus.NOT_FOUND).json({ message: `Couldn't found ${item} at inventory`, statusCode: 404 })
         }
     }
 
     @Get(':id')
-    async getInvtryById(@Param('id') id: number, @Res() res): Promise<InventoryDto> {
+    async getInvtryById(@Param('id', new ParseIntPipe({ errorHttpStatusCode: HttpStatus.NOT_ACCEPTABLE })) id: number, @Res() res): Promise<InventoryDto> {
         try {
             const serviceRes = await this.inventoryService.getInvtryById(id);
             if (Object.keys(serviceRes).length) {
                 return res.status(HttpStatus.OK).json(serviceRes);
             }
-            else { return res.status(HttpStatus.NOT_FOUND).json({ message: `registration ${id} does not exist`, error: 404 }) }
-        } catch (error) {
+            else { return res.status(HttpStatus.NOT_FOUND).json({ message: `registration ${id} does not exist`, statusCode: 404 }) }
+        } catch (err) {
             throw new NotFoundException(`Cannot get inventory with id ${id}`);
         }
     }
@@ -47,8 +47,8 @@ export class InventoryController {
     async createInvtry(@Body() invtry: InventoryDto, @Res() res): Promise<InventoryDto> {
         try {
             const serviceRes = await this.inventoryService.createInvtry(invtry)
-            return res.status(HttpStatus.CREATED).send(serviceRes)
-        } catch (error) {
+            if (serviceRes) return res.status(HttpStatus.CREATED).send(serviceRes)
+        } catch (err) {
             throw new BadRequestException('inventory creation failed')
         }
     }
@@ -57,11 +57,9 @@ export class InventoryController {
     async deleteInvtryById(@Param('id', new ParseIntPipe({ errorHttpStatusCode: HttpStatus.NOT_ACCEPTABLE })) id: number, @Res() res,): Promise<InventoryDto> {
         try {
             const serviceRes = await this.inventoryService.deleteInvtryById(id);
-            if (serviceRes) {
-                return res.status(HttpStatus.OK).send({ message: 'Deleted record' });
-            }
-        } catch (error) {
-            throw new NotFoundException('Delete failed');
+            if (serviceRes) return res.status(HttpStatus.OK).send({ message: 'Deleted record', statusCode: 200 });
+        } catch (err) {
+            throw res.status(HttpStatus.NOT_FOUND).json({ message: `registration ${id} does not exist`, statusCode: 404 })
         }
     }
 
@@ -72,11 +70,11 @@ export class InventoryController {
             const serviceRes = await this.inventoryService.updateInvtryById(id, body);
             console.log(Object.keys(serviceRes).length);
             if (Object.keys(serviceRes).length) {
-                return res.status(HttpStatus.ACCEPTED).send({ message: `Registry  ${id} successfully modified.` })
+                return res.status(HttpStatus.ACCEPTED).send({ message: `Registry  ${id} successfully modified.`, statusCode: 202 })
             } else {
-                return res.status(HttpStatus.NOT_FOUND).json({ message: `Register  ${id} does not`, error: 404 })
+                return res.status(HttpStatus.NOT_FOUND).json({ message: `registration ${id} does not exist`, statusCode: 404 })
             }
-        } catch (error) {
+        } catch (err) {
             throw new BadRequestException(`Update failed`);
         }
     }
