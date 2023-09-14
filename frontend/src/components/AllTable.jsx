@@ -3,7 +3,7 @@ import { InvtryCtx } from '../context/inventoryContext';
 import './AllTable.css'
 import { formatPrice } from '../utils/fomatPrice';
 import { AiFillDelete, AiFillEdit } from "react-icons/Ai"
-import { URL_invtry, deleteInvtry, updateInvtryById } from '../services/inventoryServices';
+import { deleteInvtry, updateInvtryById } from '../services/inventoryServices';
 
 
 
@@ -23,12 +23,10 @@ function AllTable({ listItem }) {
         if (field === 'qty' || field === 'price') {
             parsedValue = parseFloat(value);
         }
-
         setEditedProduct({
             ...editedProduct,
             [field]: parsedValue,
-        });
-        console.log("PROD", editedProduct);
+        });        
     };
 
     const handleEditClick = (invtry) => {
@@ -45,8 +43,8 @@ function AllTable({ listItem }) {
             };
             try {
                 const updatedProductResponse = await updateInvtryById(editedProduct.id, updatedProduct);
-                console.log('Producto actualizado:', updatedProductResponse);
-                //window.location.reload()
+                window.location.reload()
+                return updatedProductResponse
             } catch (error) {
                 console.error('Error al actualizar el producto:', error);
             }
@@ -63,7 +61,6 @@ function AllTable({ listItem }) {
     const handleSearch = () => {
         const filtered = invtry.filter((item) =>
             item.product.toLowerCase().includes(search.toLowerCase())
-
         );
         console.log(filtered);
         setSearchUser(filtered.slice(0, 10)); // Limitar a los primeros 10 resultados
@@ -75,7 +72,6 @@ function AllTable({ listItem }) {
     }
 
     const handleReset = () => {
-        //setMenus(menus);
         setSearch('');
         window.location.reload()
     };

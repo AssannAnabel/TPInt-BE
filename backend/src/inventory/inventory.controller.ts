@@ -65,7 +65,7 @@ export class InventoryController {
 
     @Put(':id')
     @UsePipes(new ValidationPipe({ transform: true }))
-    async updateInvtryById(@Param('id') id: number, @Body() body: InventoryDto, @Res() res: Response): Promise<Response<InventoryDto>> {
+    async updateInvtryById(@Param('id') id: number, @Body() body: Inven_idDto, @Res() res: Response): Promise<Response<Inven_idDto>> {
         try {
             const serviceRes = await this.inventoryService.updateInvtryById(id, body);
             console.log(Object.keys(serviceRes).length);

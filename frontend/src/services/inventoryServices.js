@@ -85,7 +85,6 @@ export const getInvtryByItem = async (item) => {
     const res = await fetch(URL_invtry)
     const allInvtry = await res.json();
     const items = allInvtry.filter((invtry) => invtry.item === item)
-    //console.log(items);        
     if (!items.length) throw new Error(`No hay ${item} en stock`)
     return items;
 }

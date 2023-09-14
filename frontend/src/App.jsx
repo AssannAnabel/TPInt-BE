@@ -8,6 +8,7 @@ import Ferreteria from './pages/HardwareStore';
 import NotFound from './components/Not_Found';
 import Tranquera from './pages/FarmGate';
 import RopaTrabajo from './pages/Workwear';
+import Nosotros from './pages/AboutUs';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           <Route exact path='/ferreteria' element={<Ferreteria />} />
           <Route exact path='*' element={<NotFound />} />
           <Route exact path='/tranquera' element={<Tranquera />} />
-          <Route exact path='ropaTrabajo' element={<RopaTrabajo />} />
+          <Route exact path='/ropaTrabajo' element={<RopaTrabajo />} />
+          <Route exact path='/nosotros' element={<Nosotros />} />
         </Routes>
       </BrowserRouter>
     </>

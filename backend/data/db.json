@@ -353,12 +353,12 @@
     {
       "id": 36,
       "code": "V 500340",
-      "product": "BOTA CALFOR NAUTICA C/ CUELLO N°42",
+      "product": "Bota Calfor Nautica c/cuello n°42",
       "description": "Bota de trabajo con cuello, tamaño 42",
-      "price": 1285632,
+      "price": 21050.5,
       "item": "ropa trabajo",
       "qty": 25,
-      "images": ""
+      "images": "https://www.segufershop.com.ar/images_prod/calforpampeanamarine_4_1.jpg"
     },
     {
       "id": 37,
@@ -382,10 +382,10 @@
     },
     {
       "id": 39,
-      "code": "V 500348",
+      "code": "V 500347",
       "product": "Botin de trabajo",
       "description": "Botín de trabajo Pampero, talle 42",
-      "price": 3102598,
+      "price": 310259,
       "item": "ropa trabajo",
       "qty": 3,
       "images": "https://http2.mlstatic.com/D_NQ_NP_835667-MLA70923196256_082023-V.webp"
@@ -393,12 +393,12 @@
     {
       "id": 40,
       "code": "V 500348",
-      "product": "Botin Pampero Flore c/punta marron n°40",
+      "product": "Botin Boris",
       "description": "Botín de trabajo de flor con punta marrón, tamaño 40",
-      "price": 3102598,
+      "price": 27979,
       "item": "ropa trabajo",
-      "qty": 3,
-      "images": ""
+      "qty": 50,
+      "images": "data:image/jpeg;base64,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"
     },
     {
       "code": "FER102",
@@ -411,22 +411,12 @@
       "id": 41
     },
     {
-      "code": "FER120",
-      "product": "Carretilla ",
-      "description": "taladro percutor necesario para todas las tareas del hogar",
-      "price": 2000,
-      "item": "Ferretería",
-      "qty": 147,
-      "images": "https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webp",
-      "id": 42
-    },
-    {
-      "code": "FER103",
-      "product": "Atornillador electrico",
-      "description": "taladro percutor necesario para todas las tareas del hogar",
-      "price": 10203,
-      "item": "Ferretería",
-      "qty": 200,
+      "code": "TRQ104",
+      "product": "Tranquera de campo",
+      "description": "Tranquera",
+      "price": 102030,
+      "item": "Tranquera",
+      "qty": 20,
       "images": "https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webp",
       "id": 43
     }

@@ -4,7 +4,6 @@ Proyecto integrador realizado bajo el framework NestJS, que nos sirve para incor
 Integrantes (link al perfil de Linkedin:
 [Anabel Assan](https://www.linkedin.com/in/anabel-assann/)
 [Fabricio Córdoba](https://www.linkedin.com/in/fabricio-cordoba/)
-[Santiago Garda](https://www.linkedin.com/in/santiago-garda-1835891b9/)
 [Emiliano Salazar](https://www.linkedin.com/in/emiliano-salazar/)
 
 ## I Sprint -15/8 al 21/8-

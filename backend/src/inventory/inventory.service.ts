@@ -25,10 +25,10 @@ export class InventoryService {
         const items = allInvtry.filter((invtry: Inventory) => invtry.item === item)
         if (!items.length) throw new NotFoundException(`No hay ${item} en stock`)
         return items;
-    } 
+    }
 
     async getInvtry(): Promise<InventoryDto[]> {
-            return await this.getAll();
+        return await this.getAll();
 
     }
     //GETBYID
@@ -81,7 +81,7 @@ export class InventoryService {
 
 
     //PUT
-    async updateInvtryById(id: number, invtry: InventoryDto): Promise<InventoryDto> {
+    async updateInvtryById(id: number, invtry: Inven_idDto): Promise<Inven_idDto> {
         try {
             const isInvtry = await this.getInvtryById(id);
             //Object.keys verifica si isInvtry viene con datos, y si no, se detiene ahi.
