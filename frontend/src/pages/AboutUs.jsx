@@ -7,7 +7,7 @@ function Nosotros() {
         <>
             <Header />
             <div className='container'>
-                <h2>Nosotros</h2>
+                <h2 className='us-title'>Nosotros</h2>
                 <div className='div-p-nosotros'>
                     <p>
                         Somos un grupo de estudiantes de Desarrollo Web Full stack CEPIT.

@@ -8,8 +8,7 @@ import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 
 function Home() {
-  const { invtry, error, isLoading } = useContext(InvtryCtx);
-  console.log(invtry);
+  const { error, isLoading } = useContext(InvtryCtx);
 
   if (isLoading) return <div className='loader'>{isLoading}</div>;
   if (error) return <div><h1>{error}</h1></div>;

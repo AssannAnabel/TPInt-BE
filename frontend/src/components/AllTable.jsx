@@ -57,40 +57,9 @@ function AllTable({ listItem }) {
         setEditedProduct(null);
     };
 
-    //handle pertenecientes al input de busqueda
-    const handleSearch = () => {
-        const filtered = invtry.filter((item) =>
-            item.product.toLowerCase().includes(search.toLowerCase())
-        );
-        console.log(filtered);
-        setSearchUser(filtered.slice(0, 10)); // Limitar a los primeros 10 resultados
-    };
-
-    const handleSort = () => {
-        const sorted = invtry.sort((a, b) => a.price - b.price);
-        setSortedPrice(sorted)
-    }
-
-    const handleReset = () => {
-        setSearch('');
-        window.location.reload()
-    };
-
     if (isLoading) return <div className='loader'>{isLoading}</div>;
     if (error) return <div><h1>{error}</h1></div>;
     return (
-        <>
-            <div>
-                <h2 className='title2-description'>Busca por producto</h2>
-                <input
-                    type="text"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                />
-                <button onClick={handleSearch} className='busqueda'>Buscar</button>
-                <button onClick={handleSort} className='busqueda'>Ordenar por precio</button>
-                <button onClick={handleReset} className='busqueda'>Limpiar Busqueda</button>
-            </div>
             <section className='layout'>
                 <div className="table-container">
                     <h1>Lista de Productos</h1>
@@ -176,7 +145,6 @@ function AllTable({ listItem }) {
                     </div>
                 )}
             </section>
-        </>
     );
 }
 
