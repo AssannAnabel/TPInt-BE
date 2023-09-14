@@ -7,7 +7,7 @@ import { URL_invtry, deleteInvtry, updateInvtryById } from '../services/inventor
 
 
 
-function AllTable() {
+function AllTable({ listItem }) {
 
     const { invtry, error, isLoading } = useContext(InvtryCtx);
     const [editedProduct, setEditedProduct] = useState(null);
@@ -63,7 +63,7 @@ function AllTable() {
     const handleSearch = () => {
         const filtered = invtry.filter((item) =>
             item.product.toLowerCase().includes(search.toLowerCase())
-            
+
         );
         console.log(filtered);
         setSearchUser(filtered.slice(0, 10)); // Limitar a los primeros 10 resultados
@@ -80,6 +80,8 @@ function AllTable() {
         window.location.reload()
     };
 
+    if (isLoading) return <div className='loader'>{isLoading}</div>;
+    if (error) return <div><h1>{error}</h1></div>;
     return (
         <>
             <div>
@@ -111,7 +113,7 @@ function AllTable() {
                             </tr>
                         </thead>
                         <tbody>
-                            {invtry.map((product) => (
+                            {listItem.map((product) => (
                                 <tr key={product.id}>
                                     <td>{product.code}</td>
                                     <td>{product.product}</td>

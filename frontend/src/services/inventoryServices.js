@@ -79,6 +79,8 @@ export const updateInvtryById = async (id, updatedProduct) => {
     }
 }
 
+export const itemsInvtry = ['Tranquera', 'ropa trabajo', 'Ferretería'];
+
 export const getInvtryByItem = async (item) => {
     const res = await fetch(URL_invtry)
     const allInvtry = await res.json();

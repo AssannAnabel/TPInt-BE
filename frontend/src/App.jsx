@@ -4,8 +4,10 @@ import Home from './pages/Home'
 import './App.css'
 import LoadInvtry from './pages/LoadInvtry';
 import AllProducts from './pages/AllProducts';
-import Ferreteria from './pages/Ferreteria';
+import Ferreteria from './pages/HardwareStore';
 import NotFound from './components/Not_Found';
+import Tranquera from './pages/FarmGate';
+import RopaTrabajo from './pages/Workwear';
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
           <Route exact path='/loadInvtry' element={<LoadInvtry />} />
           <Route exact path='/allProducts' element={<AllProducts />} />
           <Route exact path='/ferreteria' element={<Ferreteria />} />
-          <Route exact path='*' element={<NotFound/>} />
+          <Route exact path='*' element={<NotFound />} />
+          <Route exact path='/tranquera' element={<Tranquera />} />
+          <Route exact path='ropaTrabajo' element={<RopaTrabajo />} />
         </Routes>
       </BrowserRouter>
     </>

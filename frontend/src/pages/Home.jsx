@@ -25,10 +25,10 @@ function Home() {
         <Link className="card" to={'/ferreteria'} >
           <Cards title={"Ferretería"} image={"https://blog.deacero.com/hs-fs/hubfs/productos%20de%20ferreteria%20herramientas%20manuales.jpg?width=755&name=productos%20de%20ferreteria%20herramientas%20manuales.jpg"} />
         </Link>
-        <Link className="card">
+        <Link className="card" to={'/ropaTrabajo'} >
           <Cards title={"Ropa Trabajo"} image={"https://dsiproteccion.com/wp-content/uploads/2020/05/campo-450x450.png"} />
         </Link>
-        <Link className="card">
+        <Link className="card" to={'tranquera'} >
           <Cards title={"Tranqueras"} image={"https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webp"} />
         </Link>
       </section>
