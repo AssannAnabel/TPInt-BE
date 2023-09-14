@@ -6,10 +6,10 @@ function NotFound() {
     return (
         <>
         <Header/>
-        <body >
-            <h1>Pagina no Encontrada</h1>
-            <img src="../404.jpg" alt="404" className="body" />
-        </body>
+        <main className='not-found-container'>
+            <h1 className='not-found-title'>Página no Encontrada</h1>
+            <img src="../404.jpg" alt="404" className="not-found-image" />
+        </main>
         <Footer/>
         </>
     )
