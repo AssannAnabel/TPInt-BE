@@ -9,14 +9,8 @@ import { deleteInvtry, updateInvtryById } from '../services/inventoryServices';
 
 function AllTable({ listItem }) {
 
-    const { invtry, error, isLoading } = useContext(InvtryCtx);
+    const { error, isLoading } = useContext(InvtryCtx);
     const [editedProduct, setEditedProduct] = useState(null);
-    //la palabra de la busqueda que escribo en el input
-    const [search, setSearch] = useState("");
-    //guardamos los productos buscados
-    const [searchUser, setSearchUser] = useState([])
-    //ordena por precio
-    const [sortedPrice, setSortedPrice] = useState([])
 
     const handleInputChange = (field, value) => {
         let parsedValue = value;

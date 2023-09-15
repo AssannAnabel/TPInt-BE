@@ -3,7 +3,6 @@ import {
     UsePipes, ParseIntPipe, Query
 } from '@nestjs/common';
 import { InventoryService } from './inventory.service';
-//import {Inventory} from './inventory.interface';
 import { Response } from 'express';
 import { InventoryDto } from './inventory.dto';
 import { Inven_idDto } from './inventoryId.dto';

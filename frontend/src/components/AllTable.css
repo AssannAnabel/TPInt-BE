@@ -9,9 +9,13 @@
 .table-container {
   width: 80%;
   overflow-x: auto;
-  border: 2px solid var(--clr3);; /* Borde de 2px de color verde menta alrededor de la tabla */
-  border-radius: 8px; /* Esquinas redondeadas */
-  padding: 20px; /* Espacio interno para el contenido de la tabla */
+  border: 2px solid var(--clr3);
+  ;
+  /* Borde de 2px de color verde menta alrededor de la tabla */
+  border-radius: 8px;
+  /* Esquinas redondeadas */
+  padding: 20px;
+  /* Espacio interno para el contenido de la tabla */
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -25,13 +29,17 @@
 .product-table td {
   padding: 10px;
   text-align: left;
-  border: 1px solid var(--clr3);; /* Borde de 1px de color verde menta alrededor de celdas */
+  border: 1px solid var(--clr3);
+  ;
+  /* Borde de 1px de color verde menta alrededor de celdas */
 }
 
 .product-table thead {
-  background-color:var(--clr2); /* Color de fondo verde menta para el encabezado */
+  background-color: var(--clr2);
+  /* Color de fondo verde menta para el encabezado */
   color: #fff;
-  text-align: center; /* Alinea el texto del encabezado al centro */
+  text-align: center;
+  /* Alinea el texto del encabezado al centro */
 }
 
 .product-table th {
@@ -39,20 +47,70 @@
 }
 
 .product-table tbody tr:nth-child(even) {
-  background-color: #e0f3e0; /* Cambia el color de fondo de las filas pares */
+  background-color: #e0f3e0;
+  /* Cambia el color de fondo de las filas pares */
 }
 
 .product-table tbody tr:hover {
-  background-color: #d1ecd1; /* Cambia el color de fondo al pasar el cursor sobre una fila */
+  background-color: #d1ecd1;
+  /* Cambia el color de fondo al pasar el cursor sobre una fila */
 }
 
 /* Estilo para el título "Lista de Productos" */
 .product-table h1 {
-  text-align: center; /* Alinea el título al centro */
-  margin-bottom: 20px; /* Espacio inferior para separar el título de la tabla */
-  color:var(--clr2); /* Color de texto verde menta */
-  font-size: 24px; /* Tamaño de fuente del título */
-  font-weight: bold; /* Texto en negrita */
+  text-align: center;
+  /* Alinea el título al centro */
+  margin-bottom: 20px;
+  /* Espacio inferior para separar el título de la tabla */
+  color: var(--clr2);
+  /* Color de texto verde menta */
+  font-size: 24px;
+  /* Tamaño de fuente del título */
+  font-weight: bold;
+  /* Texto en negrita */
 }
 
 /* var(--clr1), var(--clr2), var(--clr3), var(--clr4), var(--clr5), var(--clr4), var(--clr3), var(--clr2), var(--clr1)); */
+
+/*MODAL*/
+.edit-form {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#modal {
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 90%;
+  background-color: #d1ecd1;
+
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+input {
+  background-color: var(--clr2);
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

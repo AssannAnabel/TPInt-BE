@@ -191,16 +191,6 @@
       "images": "https://http2.mlstatic.com/D_NQ_NP_951491-MLA48925012105_012022-V.webp"
     },
     {
-      "id": 20,
-      "code": "FER020",
-      "product": "Llave de Tubo",
-      "description": "Llave de tubo ajustable para trabajos en tuberías y plomería.",
-      "price": 26205,
-      "item": "Ferretería",
-      "qty": 14,
-      "images": "https://http2.mlstatic.com/D_NQ_NP_622748-MLU70634226894_072023-V.webp"
-    },
-    {
       "id": 21,
       "code": "FER021",
       "product": "Taladro de Banco",
@@ -235,7 +225,7 @@
       "code": "FER024",
       "product": "Caja de Herramientas",
       "description": "Caja resistente con compartimentos para organizar y transportar herramientas.",
-      "price": 126658,
+      "price": 126640,
       "item": "Ferretería",
       "qty": 10,
       "images": "https://http2.mlstatic.com/D_NQ_NP_739093-MLA48161328582_112021-V.webp"
@@ -302,12 +292,12 @@
     },
     {
       "id": 31,
-      "code": "TRQ001",
+      "code": "TRQ011",
       "product": "Tranquera de Madera Clásica",
       "description": "Tranquera de madera tratada para uso en campos. Diseño clásico con acabado rústico.",
-      "price": 15023,
+      "price": 150230,
       "item": "Tranquera",
-      "qty": 10,
+      "qty": 100,
       "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkmI3kUzwTqi8157_5pEAoX76vYXhoI8lStA&usqp=CAU"
     },
     {
@@ -419,6 +409,36 @@
       "qty": 20,
       "images": "https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webp",
       "id": 43
+    },
+    {
+      "code": "FER102",
+      "product": "Taladro Percutor Makita",
+      "description": "taladro percutor necesario para todas las tareas del hogar",
+      "price": 16859,
+      "item": "Ferretería",
+      "qty": 50,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_988705-MLA31642922411_072019-O.webp",
+      "id": 44
+    },
+    {
+      "code": "FER103",
+      "product": "Campera",
+      "description": "campera para todo el dia",
+      "price": 25698,
+      "item": "ropa trabajo",
+      "qty": 250,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_14741-MLA20090162463_052014-O.webp",
+      "id": 45
+    },
+    {
+      "code": "V 500350",
+      "product": "Camperon",
+      "description": "Campera de abrigo para el campo",
+      "price": 35684,
+      "item": "ropa trabajo",
+      "qty": 30,
+      "images": "https://http2.mlstatic.com/D_NQ_NP_14741-MLA20090162463_052014-O.webp",
+      "id": 46
     }
   ]
 }
